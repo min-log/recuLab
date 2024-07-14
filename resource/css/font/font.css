@@ -1,0 +1,76 @@
+/* SF -기본*/
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 100;
+	src: url("NanumSquareL.woff") format("woff"),
+		url("NanumSquareL.ttf") format("truetype"),
+		url("NanumSquareL.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 200;
+	src: url("NanumSquare_acL.woff") format("woff"),
+		url("NanumSquare_acL.ttf") format("truetype"),
+		url("NanumSquare_acL.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 300;
+	src: url("NanumSquareR.woff") format("woff"),
+		url("NanumSquareR.ttf") format("truetype"),
+		url("NanumSquareR.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 300;
+	src: url("NanumSquareR.woff") format("woff"),
+		url("NanumSquareR.ttf") format("truetype"),
+		url("NanumSquareR.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 400;
+	src: url("NanumSquareR.woff") format("woff"),
+		url("NanumSquareR.ttf") format("truetype"),
+		url("NanumSquareR.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 500;
+	src: url("NanumSquareB.woff") format("woff"),
+		url("NanumSquareB.ttf") format("truetype"),
+		url("NanumSquareB.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: 600;
+	src: url("NanumSquareB.woff") format("woff"),
+		url("NanumSquareB.ttf") format("truetype"),
+		url("NanumSquareB.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "nanum";
+	font-style: normal;
+	font-weight: bold;
+	src: url("NanumSquare_acB.woff") format("woff"),
+		url("NanumSquare_acB.ttf") format("truetype"),
+		url("NanumSquare_acB.otf") format("opentype");
+}
