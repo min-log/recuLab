@@ -59,10 +59,13 @@
 						<input type="text" placeholder="이름"/>
 						<input class="mt-20" type="text" placeholder="휴대폰번호" />
 					</div>
+					<p class="err mt-10">
+						<img class="icon_err" src="../resource/images/icon/icon_err.png" />
+						정보가 정확하지 않습니다. 다시 한 번 확인 후 작성해주세요.
+					</p>
 					<div class="mt-20 t_c">
 						<button class="btn-type-1 w-full" type="button">이메일 찾기</button>
 					</div>
-					<p class="err">! 정보가 정확하지 않습니다. 다시 한 번 확인 후 작성해주세요.</p>
 					<div class="mt-20 login_i">
 						<a href="#">비밀번호 찾기</a>
 						<a href="#">RecuLAB 계정 만들기</a>
@@ -94,12 +97,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../resource/js/jquery.selectric.min.js"></script>
-	<script>
-		$(function(){
-			$('select').selectric();
-		})
-	</script>
-	
+	<script src="../resource/js/common.js"></script>
 
 </body>
 </html>

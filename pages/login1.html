@@ -55,8 +55,17 @@
 					</p>
 					<div class="mt-20">
 						<input type="text" placeholder="이메일"/>
+						<p class="err mt-10">
+							<img class="icon_err" src="../resource/images/icon/icon_err.png" />
+							이메일을 다시 한 번 확인해주세요.
+						</p>
 						<input type="password" placeholder="비밀번호" />
+						<p class="err mt-10">
+							<img class="icon_err" src="../resource/images/icon/icon_err.png" />
+							비밀번호를 다시 한 번 확인해주세요.
+						</p>
 					</div>
+					
 					<div class="mt-40 login_i">
 						<a href="#">이메일 찾기</a>
 						<a href="#">비밀번호 찾기</a>
@@ -93,11 +102,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../resource/js/jquery.selectric.min.js"></script>
-	<script>
-		$(function(){
-			$('select').selectric();
-		})
-	</script>
+	<script src="../resource/js/common.js"></script>
 	
 
 </body>
