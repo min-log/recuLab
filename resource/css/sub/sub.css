@@ -1,0 +1,17 @@
+/* 로그인 페이지 */
+.login_wrap {}
+.login_content {padding:100px 50px 100px;display: flex;align-items: center;flex-direction: column;}
+.login_form {width: 400px;}
+.login_form input[type="text"],
+.login_form input[type="password"] {width: 100%;}
+.login_form input[type="password"] {margin-top:10px}
+.login_i {display:flex;justify-content: center;}
+.login_i a {padding:0 10px;position: relative;}
+.login_i a + a:after {position: absolute;top:50%;left:0;transform: translateY(-50%);
+content:'';display: block;border-left:1px solid var(--color-type-gray-1);width: 1px;height: 10px;}
+
+.info_box {border:1px solid var(--color-type-gray-1);background: var(--color-type-gray-bg);padding:20px 20px;border-radius: var(--border-rd);}
+.info_txt {border-bottom: 1px solid var(--color-type-black);padding:1px 5px;vertical-align: middle;display: inline-block;margin: 0 0 5px;font-weight: bold;}
+
+.join_form {width: 600px;}
+.join_select li {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);padding:20px;}
