@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="../../resource/css/font/font.css" rel="stylesheet" type="text/css" />
+	<link href="../../resource/css/common/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../../resource/css/common/selectric.css" rel="stylesheet" >
+	<link href="../../resource/css/common/common.css" rel="stylesheet" type="text/css" />
+	<link href="../../resource/css/sub/sub.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div data-include="../common/header.html"></div>
+	<div class="container">
+		<div class="container_wrap inner">
+			<ul class="join_stap">
+				<li class="active">약관동의</li>
+				<li class="active">정보작성</li>
+				<li class="active">가입완료</li>
+			</ul>
+			<section class="join_content">
+				<div class="mt-100">
+					<h2 class="tit">RecuLAB 계정 생성 완료</h2>
+					<p class="sub_tit">
+						RecuLAB 서비스 이용을 위한 가입이 완료되었습니다.
+					</p>
+				</div>
+
+				<div class="t_c info_box mt-50">
+					<img src="" alt="로고">
+					<p class="mt-20">
+						회사와 답변해 주시는 분들의 시간을 절대 헛되이 하지 않겠습니다. <br />
+						답변 받을 가치가 있는 문항만을 추구합니다.
+					</p>
+					<div class="err mt-20 show">
+						<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+						마이페이지에서 레퍼런스 체크에 필요한 상세 정보를 추가적으로 진행해주세요
+					</div>
+				</div>
+				<div class="mt-20">
+					<button class="btn-type-1 w-full agree_check_btn" onclick="location='../main/index.html'">메인페이지로 돌아가기</button>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>
+		
+		const agreeCheckBox = document.getElementById("join_agreement_ck");
+		const agreeCheckBtn = document.querySelector(".agree_check_btn");
+		const agreeCheckErr = document.querySelector(".err");
+		
+
+		function joinNextBtn(nextPage){		
+			
+			if (agreeCheckBox.checked) {
+				
+				agreeCheckErr.style.display = "none";
+
+				joinNextPage(nextPage);
+
+			} else {
+
+				agreeCheckErr.style.display = "block";
+
+			}
+		}
+		
+	</script>
+	<div data-include="../common/footer.html"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../../resource/js/jquery.selectric.min.js"></script>
+	<script src="../../resource/js/common.js"></script>
+	<script src="../../resource/js/sub.js"></script>
+</body>
+</html>

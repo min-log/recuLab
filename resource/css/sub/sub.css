@@ -1,4 +1,4 @@
-.container_wrap {margin: 100px 0;}
+.container_wrap {margin-top: 100px;margin-bottom: 100px;}
 .center_content {display: flex;align-items: center;flex-direction: column;}
 
 /* 로그인 페이지 */
@@ -25,9 +25,30 @@
 }
 .join_select li:hover .img_box img {filter:inherit;transform: scale(1.4);}
 .join_stap {display: flex;justify-content:space-between;margin:0 auto;max-width: 600px;}
-.join_stap li {width: 100px;height: 100px;padding: 0px 0;border-radius: 50px;background:var(--color-type-gray-bg);position: relative;text-align: center;border: 2px solid var(--color-type-gray-2);/* color: var(--color-type-gray-1); */display: flex;justify-content: center;align-items: center;}
+.join_stap li {width: 100px;height: 100px;padding: 0px 0;border-radius: 50px;background:var(--color-type-gray-bg);position: relative;text-align: center;border: 2px solid var(--color-type-gray-2);/* color: var(--color-type-gray-1); */display: flex;justify-content: center;align-items: center;transition: all 1s ease;}
 .join_stap li + li::after {content: '';display: block;width: 200%;height: auto;position: absolute;top:50%;right: 100%;transform: translate(0,50%);border-top: 2px var(--color-type-gray-2) dashed;z-index: -1;}
 .join_stap li.active {background:var(--color-main);color: var(--color-type-black);font-weight: bold;border-color:var(--color-type-black)}
 .join_stap li.active::after {border-color: var(--color-type-black);}
-
+.join_content {max-width: 800px;margin:0 auto;}
 .join_agreement_wrap {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);padding:20px;height: 200px;overflow: hidden;overflow-y: auto;}
+.form_cell + .form_cell {margin-top: 20px;}
+.form_cell label {margin-bottom: 10px;display: inline-block;}
+.form_con {width: 100%;}
+.form_con + .form_con {margin-top:10px}
+.form_con input[type='text'],
+.form_con input[type='password'] {width: 100%;}
+.form_con input + input {margin-left: 10px;}
+.form_email {display: flex;align-items: center;}
+.form_email input[type="text"] {width: 30%;margin-right: 10px;}
+.form_email .form_email select,
+.form_email .selectric-wrapper {width: 70%;margin-left: 10px;}
+.form_email_input {overflow: hidden;}
+
+/*서비스 소개 신청서 */
+.service_wrap {display: flex;}
+.service_wrap .service_img {width: 50%;border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding: 40px;margin-right: 20px;}
+.service_wrap .service_from {width: 50%;}
+.service_agree_wrap {display: flex;align-items: center;border:1px solid var(--color-type-black);border-radius: var(--border-rd);padding:0 0 0 20px;position: relative;}
+.service_agree_wrap label {margin-bottom: 0;}
+.service_agree_wrap .select-type-1 {width: 100%;position:initial;}
+.service_agree_box {padding: 10px;font-size: 12px;}

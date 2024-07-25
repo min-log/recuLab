@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="../../resource/css/font/font.css" rel="stylesheet" type="text/css" />
+	<link href="../../resource/css/common/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../../resource/css/common/selectric.css" rel="stylesheet" >
+	<link href="../../resource/css/common/common.css" rel="stylesheet" type="text/css" />
+	<link href="../../resource/css/sub/sub.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div data-include="../common/header.html"></div>
+	<div class="container">
+		<div class="container_wrap inner">
+			<ul class="join_stap">
+				<li class="active">약관동의</li>
+				<li class="active">정보작성</li>
+				<li>가입완료</li>
+			</ul>
+			<section class="join_content">
+				<div class="mt-100">
+					<h2 class="tit">RecuLAB 계정 생성</h2>
+					<p class="sub_tit">
+						RecuLAB 서비스 이용을 위한 기본 정보를 작성해 주세요.
+					</p>
+				</div>
+				<form class="mt-50">
+					<div class="form_cell">
+						<label>회사명</label>
+						<div class="form_con">
+							<input type="text" placeholder="회사명을 입력해주세요"/>
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							회사명을 작성해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>회사인원수 </label>
+						<div class="form_con">
+							<select>
+								<option>회사 인원수를 선택해주세요.</option>
+								<option>1명 ~ 10명</option>
+								<option>11명 ~ 50명</option>
+								<option>51명 ~ 100명</option>
+								<option>101명 ~ 300명</option>
+								<option>501명 ~ 1000명</option>
+								<option>1001명 이상</option>
+							</select>
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							회사 인원수를 선택해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>이메일</label>
+						<div class="form_con form_email">
+							<input type="text" placeholder="이메일 앞자리를 입력" /> @
+							<select class="email_address" onChange="emailAddressChange()">
+								<option value="i">직접입력</option>
+								<option>naver.com</option>
+								<option>daum.net</option>
+								<option>google.com</option>
+							</select>
+							<br>
+						</div>
+						<div class="form_con form_email_input">
+							<input type="text" placeholder="이메일 뒷자리를 입력해주세요." />
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							이메일을 입력해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>비밀번호</label>
+						<div class="form_con">
+							<input type="password" placeholder="영문, 숫자, 특수문자를 조합하여 8자리 이상 작성해주세요.">
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							영문, 숫자, 특수문자를 조합하여 8자리 이상 작성해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>비밀번호 확인</label>
+						<div class="form_con">
+							<input type="password" placeholder="비밀번호를 다시 입력해주세요.">
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							비밀번호를 다시 확인해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>이름</label>
+						<div class="form_con flex">
+							<input type="text" placeholder="성">
+							<input type="text" placeholder="이름">
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							다시 확인해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>전화번호</label>
+						<div class="form_con">
+							<input type="text" placeholder="-없이 작성해주세요.">
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+							전화번호를 다시 확인해주세요.
+						</div>
+					</div>
+				</form>
+				<div class="mt-50">
+					<button class="btn-type-1 w-full agree_check_btn" onclick="joinNextBtn('join_result.html')">다음</button>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>
+
+		let formCheck = true; // inputBox 체크용
+
+		const agreeCheckErr = document.querySelectorAll(".err");
+
+		function joinNextBtn(nextPage) {
+
+				if (formCheck) {
+
+					// 에러 폼 제거
+					agreeCheckErr.forEach(item => {
+
+						item.style.display = "none";
+
+					});
+
+					joinNextPage(nextPage);
+
+				}
+
+			}
+		
+	</script>
+	<div data-include="../common/footer.html"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../../resource/js/jquery.selectric.min.js"></script>
+	<script src="../../resource/js/common.js"></script>
+<script src="../../resource/js/sub.js"></script>
+</body>
+</html>
