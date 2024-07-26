@@ -52,3 +52,8 @@
 .service_agree_wrap label {margin-bottom: 0;}
 .service_agree_wrap .select-type-1 {width: 100%;position:initial;}
 .service_agree_box {padding: 10px;font-size: 12px;}
+
+.agree_wrap h4 {font-size: var(--font-size-middle);}
+.agree_wrap h5 {margin-top:30px;margin-bottom: 10px;display: block;}
+.agree_ul {margin:10px 0;}
+.agree_ul li {text-indent: -10px;padding-left: 10px;}
