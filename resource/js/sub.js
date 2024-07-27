@@ -45,20 +45,4 @@ function joinNextPage(nextPage){
 
 
 
-function selectOpen(button) {
-	// 모든 .select-con 요소 숨기기
-	document.querySelectorAll('.select-con').forEach(function (con) {
-		if (con !== button.nextElementSibling) {
-			con.classList.remove('show');
-		}
-	});
-
-	// 클릭된 버튼의 다음 형제 요소인 .select-con 요소 보이기 또는 숨기기
-	var selectCon = button.nextElementSibling;
-	if (selectCon && selectCon.classList.contains('select-con')) {
-		selectCon.classList.toggle('show');
-	}
-}
-
-
 

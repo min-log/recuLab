@@ -64,7 +64,17 @@
 								</select>		
 							</div>
 						</div>
-						<div class="form_cell service_agree_wrap">
+						<div class="form_cell mt-20">
+							<label>담당자 이메일</label>
+							<div class="form_con">
+								<input type="text" placeholder="연락 받으실 이메일을 입력해 주세요" />
+							</div>
+							<div class="err mt-10">
+								<img class="icon_err" src="../../resource/images/icon/icon_err.png" />
+								이메일을 다시 한 번 확인해 주세요
+							</div>
+						</div>
+						<div class="form_cell service_agree_wrap mt-50">
 							<input id="serviceAgree" type="checkbox" />
 							<label for="serviceAgree">
 								<i></i>
@@ -81,47 +91,24 @@
 								</div>
 							</div>
 						</div>
-						<div class="form_cell mt-20">
-							<label>이메일</label>
-							<div class="form_con">
-								<input type="text" placeholder="연락 받으실 이메일을 입력해 주세요" />
-							</div>
-						</div>
-						<div class="mt-50">
-							<button class="btn-type-1 w-full agree_check_btn" >서비스 소개서 신청하기</button>
+						
+						<div class="mt-20">
+							<button class="btn-type-1 w-full agree_check_btn" type="button" onclick="serviceSubmit()" disabled>서비스 소개서 신청하기</button>
 						</div>
 					</form>
 				</div>
 
-			</div>
-				
-		
-			
+			</div>	
 		</div>
 	</div>
 	<script>
-
-		let formCheck = true; // inputBox 체크용
-
-		const agreeCheckErr = document.querySelectorAll(".err");
-
-		function joinNextBtn(nextPage) {
-
-				if (formCheck) {
-
-					// 에러 폼 제거
-					agreeCheckErr.forEach(item => {
-
-						item.style.display = "none";
-
-					});
-
-					joinNextPage(nextPage);
-
-				}
-
-			}
-		
+		function serviceSubmit(){
+			msgShow('정상적으로 서비스 소개서 신청이 완료되었습니다');
+			setTimeout(function(){
+				location.href = "/pages/main/index.html"
+			},1000)
+			
+		}
 	</script>
 	<div data-include="../common/footer.html"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
