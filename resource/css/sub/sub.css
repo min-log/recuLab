@@ -96,7 +96,7 @@
 .maypage_wrap .my_service > div + div {margin-left:20px}
 .maypage_wrap .my_service h5 {margin-bottom: 10px;}
 .maypage_wrap .my_service p {font-size: 12px;}
-.maypage_wrap .my_service label {display: block;padding: 20px;border:2px solid var(--color-type-gray-1);border-radius: var(--border-rd);background: var(--color-type-gray-bg);}
+.maypage_wrap .my_service label {display: block;padding: 20px;border:2px solid var(--color-type-gray-1);border-radius: var(--border-rd);background: var(--color-type-gray-bg);cursor: auto;}
 .maypage_wrap .my_service input[type="radio"] + label {opacity: 0.5;}
 .maypage_wrap .my_service input[type="radio"]:checked + label {opacity: 1;}
 .maypage_wrap .my_service .ck {width: 40px;height: 40px;background: url('/resource/images/icon/icon_radio_b.png') no-repeat;display: block;background-size: 100%;float: right;opacity: 0.2;}
@@ -156,3 +156,15 @@
 .box {border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding:20px;}
 .form_date input[type="date"]{width: 40%;}
 .form_date span {margin:10px;}
+.select-wrap {display: flex;
+	align-items: center;
+	position: relative;}
+
+.select-wrap .select-type-1 {width: 100%;}
+.select-wrap .select-type-1 .select-tit{border: 1px solid var(--color-type-black);
+	border-radius: var(--border-rd);
+	padding: 0 0 0 20px;}
+.culture_wrap {padding:20px;}
+.culture_wrap label {padding:5px;margin:5px;border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);color: var(--color-type-gray-1);display: inline-block;}
+.culture_wrap input[type='checkbox'] + label {display: inline-block;}
+.culture_wrap input[type='checkbox']:checked +label {background-color: var(--color-main);color: var(--color-type-black);border-color: var(--color-type-black);}

@@ -74,11 +74,13 @@
 						<p>
 							기본 서비스 50회권을 이용하고 계십니다.
 							이용권 변경을 원하신다면, 
-							변경을 눌러주세요.
+							<a href="./my_service.html">
+								<b  class="color_red">변경</b>
+							</a>을 눌러주세요.
 						</p>
 						<div class="my_service mt-20">
 							<div class="basic">
-								<input type="radio" name="myService" id="myServiceBasic" checked>
+								<input type="radio" name="myService" id="myServiceBasic" checked disabled>
 								<label for="myServiceBasic">
 									<span class="ck"></span>
 									<h5>기본 서비스</h5>
@@ -86,7 +88,7 @@
 								</label>
 							</div>
 							<div class="hard">
-								<input type="radio" name="myService" id="myServiceHard">
+								<input type="radio" name="myService" id="myServiceHard"  disabled>
 								<label for="myServiceHard">
 									<span class="ck"></span>
 									<h5>심화 서비스</h5>
@@ -184,15 +186,145 @@
 					<div id="myWriter"  class="my-sec">
 						<h4 class="mi_tit">지원자 질문지 선택</h4>
 						<div class="box">
-							<h5 class="sub_tit">질문지</h5>
-							<div>
-
+							<div class="form_cell">
+								<lable>질문지</lable>
+								<div class="mt-10 form_con">
+									<a href="#" class="btn-type-1 black">기본 질문지 확인</a>
+								</div>
 							</div>
-							<h5 class="sub_tit">컬처핏 확인</h5>
-							<div class="culture_wrap">
-								
+							<div class="form_cell">
+								<lable>컬처핏 확인</lable>
+								<div class="form_con">
+									<div class="select-wrap">
+										<div class="select-type-1">
+											<button onclick="selectOpen(this)" class="select-tit" type="button">
+												컬처핏 리스트
+												<i class="btn"></i>
+											</button>
+											<div class="select-con">
+												<div class="culture_wrap">
+													<input id="culture1" name="culture" type="checkbox" checked>
+													<label for="culture1">
+														도전 혁신 창의
+													</label>
+													<input id="culture2" name="culture" type="checkbox">
+													<label for="culture2">
+														소통 공유
+													</label>
+													<input id="culture3" name="culture" type="checkbox">
+													<label for="culture3">
+														고객
+													</label>
+													<input id="culture4" name="culture" type="checkbox">
+													<label for="culture4">
+														열정 주도
+													</label>
+													<input id="culture5" name="culture" type="checkbox" checked>
+													<label for="culture5">
+														진실, 신뢰
+													</label>
+													<input id="culture6" name="culture" type="checkbox" checked>
+													<label for="culture6">
+														존중
+													</label>
+													<input id="culture7" name="culture" type="checkbox">
+													<label for="culture7">
+														협동
+													</label>
+													<input id="culture8" name="culture" type="checkbox">
+													<label for="culture8">
+														최고 우수
+													</label>
+													<input id="culture9" name="culture" type="checkbox">
+													<label for="culture9">
+														성과
+													</label>
+													<input id="culture10" name="culture" type="checkbox">
+													<label for="culture10">
+														책임
+													</label>
+													<input id="culture11" name="culture" type="checkbox">
+													<label for="culture11">
+														애자일
+													</label>
+													<input id="culture12" name="culture" type="checkbox">
+													<label for="culture12">
+														지속가능성
+													</label>
+													<input id="culture13" name="culture" type="checkbox">
+													<label for="culture13">
+														상품 효율 개선
+													</label>
+													<input id="culture14" name="culture" type="checkbox">
+													<label for="culture14">
+														데이터 중심
+													</label>
+													<input id="culture15" name="culture" type="checkbox">
+													<label for="culture15">
+														자율
+													</label>
+													<input id="culture16" name="culture" type="checkbox">
+													<label for="culture16">
+														편의성 최적화
+													</label>
+													<input id="culture17" name="culture" type="checkbox">
+													<label for="culture17">
+														연결 적용
+													</label>
+													<input id="culture18" name="culture" type="checkbox">
+													<label for="culture18">
+														윤리
+													</label>
+													<label for="culture19">
+														<input id="culure19" name="culture" type="checkbox">
+														즐거움
+													</label>
+													<input id="culture20" name="culture" type="checkbox">
+													<label for="culture20">
+														공정
+													</label>
+													<input id="culture21" name="culture" type="checkbox">
+													<label for="culture21">
+														안전
+													</label>
+													<input id="culture22" name="culture" type="checkbox">
+													<label for="culture22">
+														열정
+													</label>
+													<input id="culture23" name="culture" type="checkbox">
+													<label for="culture23">
+														기본
+													</label>
+													<input id="culture24" name="culture" type="checkbox">
+													<label for="culture24">
+														회복 보호
+													</label>
+													<input id="culture25" name="culture" type="checkbox">
+													<label for="culture25">
+														접근성 스마트 워크
+													</label>
+													<input id="culture26" name="culture" type="checkbox">
+													<label for="culture26">
+														개발 성장
+													</label>
+													<input id="culture27" name="culture" type="checkbox">
+													<label for="culture27">
+														소신, 판단, 사고
+													</label>
+													<input id="culture28" name="culture" type="checkbox">
+													<label for="culture28">
+														실질 경험
+													</label>
+													<input id="culture29" name="culture" type="checkbox">
+													<label for="culture29">
+														조직
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<h5 class="sub_tit">추가 질문</h5>
 							<div class="form_cell mt-20">
 								<label for="">추가 질문 1</label>
 								<div class="form_con">
