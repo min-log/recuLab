@@ -168,3 +168,11 @@
 .culture_wrap label {padding:5px;margin:5px;border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);color: var(--color-type-gray-1);display: inline-block;}
 .culture_wrap input[type='checkbox'] + label {display: inline-block;}
 .culture_wrap input[type='checkbox']:checked +label {background-color: var(--color-main);color: var(--color-type-black);border-color: var(--color-type-black);}
+
+/* 질문지 확인 */
+.tab {}
+.tab li a {}
+
+.survey_wrap {}
+.survey_tit {}
+.survey_con {}
