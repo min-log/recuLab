@@ -51,7 +51,8 @@ h4 {margin: 0;}
 img {max-width: 100%;}
 *,
 html,
-body {color: var(--color-type-black);font-family: 'nanum', 'Arial', Arial, Dotum;font-size: var(--font-size-normal);line-height: 1.6;box-sizing: border-box;word-break: keep-all;}
+body {color: var(--color-type-black);font-family: 'nanum', 'Arial', Arial, Dotum;font-size: var(--font-size-normal);line-height: 1.6;box-sizing: border-box;word-break: keep-all;scroll-behavior: smooth;}
+
 button {padding:0;box-sizing: border-box;background: #fff;border:0;box-sizing: border-box;display: inline-block;}
 .inner {padding:0 40px;max-width:1200px;margin:0 auto;}
 .container {padding-top:80px;min-height: calc(100vh - 140px);}
@@ -72,7 +73,7 @@ footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;
 .footer_top .lang .selectric .label {height:35px;line-height: 35px;}
 .btn_wrap {display: flex;}
 .btn-type-1 {background-color: var(--color-main);}
-.btn-type-2 {border: 1px solid var(--color-type-black);}
+.btn-type-2 {border: 1px solid var(--color-type-black);background: #fff;}
 [class*="btn-"]{
 	text-align: center;
 	color: var(--color-type-black);
@@ -85,6 +86,8 @@ footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;
 }
 .btn-type-1.black {background-color: var(--color-type-black);color:#fff;}
 .btn-type-2.black {border-color: var(--color-type-black);}
+.btn-type-1.red {background-color: var(--color-err);color:#fff;}
+.btn-type-2.red {border-color: var(--color-err);color:var(--color-err)}
 .btn_wrap [class*="btn-"] + [class*="btn-"] {margin-left:10px}
 [class*="btn-"]:hover {animation: bounce .6s ease;}
 [class*="btn-"]:disabled {background: var(--color-type-gray-bg);color:var(--color-type-gray-1);animation: infinite;}
@@ -262,6 +265,7 @@ input[type='checkbox']:checked+label>i:before {
 .mt-80 {margin-top:80px !important}.ml-80 {margin-left:80px !important}.mr-80 {margin-right:80px !important}
 .mt-90 {margin-top:90px !important}.ml-90 {margin-left:90px !important}.mr-90 {margin-right:90px !important}
 .mt-100 {margin-top:100px !important}.ml-100 {margin-left:100px !important}.mr-100 {margin-right:100px !important}
+.pt-100 {padding-top:100px !important}
 .w-full {width: 100%;}
 .color_main {color:var(--color-main)}
 .color_red {color:var(--color-err)}
@@ -272,7 +276,7 @@ table td {border:1px solid var(--color-type-gray-1);padding:5px 10px;text-align:
 table th{background: var(--color-type-gray-bg);}
 table.t_c th,
 table.t_c td {text-align: center;}
-
+table th.bg {background-color: var(--color-main);}
 
 .bg_wrap {position: fixed;top:0;left:0;z-index: 900;width: 100vw;height: 100vh;background: #000;opacity: 0.2;display: none;}
 .loading_wrap {position: fixed;top:50%;left:50%;z-index: 1000;transform: translate(-50%,-50%);display: none;}
