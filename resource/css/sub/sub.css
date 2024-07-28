@@ -140,7 +140,7 @@
 .my_service_pick > div .top h5 {font-size:var(--font-size-big);margin-bottom:20px;}
 .my_service_pick ul li label {border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding:20px;margin:10px 0;display: block;opacity: 0.8;background-color: var(--color-type-gray-bg);}
 .my_service_pick ul li label:hover {opacity: 1;}
-.my_service_pick ul li label .ck {width: 40px;height: 40px;background: url('/resource/images/icon/icon_radio_b.png') no-repeat;display: block;background-size: 100%;float: right;opacity: 0.2;}
+.my_service_pick ul li label .ck {width: 40px;height: 40px;background: url('../images/icon/icon_radio_b.png') no-repeat;display: block;background-size: 100%;float: right;opacity: 0.2;}
 .my_service_pick ul li label:hover .ck {opacity: 0.5;}
 .my_service_pick ul li input[type='radio']:checked + label {border-color: var(--color-type-black);opacity: 1;}
 .my_service_pick ul li input[type='radio']:checked+label .ck {opacity: 1;}
