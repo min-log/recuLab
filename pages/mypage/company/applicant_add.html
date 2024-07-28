@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="/resource/css/font/font.css" rel="stylesheet" type="text/css" />
+	<link href="/resource/css/common/reset.css" rel="stylesheet" type="text/css" />
+	<link href="/resource/css/common/selectric.css" rel="stylesheet">
+	<link href="/resource/css/common/common.css" rel="stylesheet" type="text/css" />
+	<link href="/resource/css/sub/sub.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div data-include="../../common/header.html"></div>
+	<div class="container">
+		<div class="inner">
+			<div class="maypage_wrap">
+				<section class="mypage_left">
+					<div class="mypage_top">
+						<div class="mypage_user_info">	
+							<a href="./main.html" class="my_home">
+								<img src="/resource/images/icon/icon_my_b.png" alt="마이페이지 이동">
+							</a>
+							<h2 class="sub_tit">리쿠랩</h2>
+							<span>N차 남음</span>
+						</div>
+						<div class="mypage_menu">
+							<ul>
+								<li class="active">
+									<a href="./applicant_add.html">
+										<img src="/resource/images/icon/icon_my_user_a.png" alt="">
+										입사지원자 추가
+									</a>
+								</li>
+								<li>
+									<a href="./my_service.html">
+										<img src="/resource/images/icon/icon_my_service.png" alt="">
+										서비스 정보
+									</a>
+								</li>
+								<li>
+									<a href="./my_survey.html">
+										<img src="/resource/images/icon/icon_my_list.png" alt="">
+										기본 질문지 확인
+							
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<ul class="mypage_pro">
+						<li>
+							<p>개인정보 작성</p>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<p>레퍼런스 체크</p>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<p>레퍼런스 체크 완료</p>
+							<span class="num">3</span>
+						</li>
+					</ul>
+
+				</section>
+				<section class="mypage_content">
+					<div id="myService">
+						<h4 class="mi_tit mt-50">진행권 선택</h4>
+						<p>
+							기본 서비스 50회권을 이용하고 계십니다.
+							이용권 변경을 원하신다면, 
+							변경을 눌러주세요.
+						</p>
+						<div class="my_service mt-20">
+							<div class="basic">
+								<input type="radio" name="myService" id="myServiceBasic" checked>
+								<label for="myServiceBasic">
+									<span class="ck"></span>
+									<h5>기본 서비스</h5>
+									<p>설명</p>
+								</label>
+							</div>
+							<div class="hard">
+								<input type="radio" name="myService" id="myServiceHard">
+								<label for="myServiceHard">
+									<span class="ck"></span>
+									<h5>심화 서비스</h5>
+									<p>설명</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div id="myApplication" class="my-sec">
+						<h4 class="mi_tit">
+							지원자 정보
+						</h4>
+						<div class="box mt-50">
+							<h5 class="sub_tit">개인정보</h5>
+							<div class="form_cell mt-20">
+								<label for="">
+									지원자 이름
+								</label>
+								<div class="form_con flex">
+									<input type="text" placeholder="성을 입력해주세요.">
+									<input type="text" placeholder="이름을 입력해주세요.">
+								</div>
+							</div>
+							<div class="form_cell">
+								<label for="">
+									지원자 이메일
+								</label>
+								<div class="form_con flex">
+									<input type="text" placeholder="지원자의 이메일을 입력해주세요.">
+								</div>
+							</div>
+							<div class="form_cell">
+								<label for="">
+									지원자 전화번호
+								</label>
+								<div class="form_con flex">
+									<input type="text" placeholder="지원자의 전화번호를 숫자만 입력해주세요.">
+								</div>
+							</div>
+						</div>
+						<div class="box mt-50">
+							<h5 class="sub_tit">지원 분야</h5>
+							<div class="form_cell mt-20">
+								<label for="">
+									부서
+								</label>
+								<div class="form_con flex">
+									<input type="text" placeholder="지원자의 전화번호를 숫자만 입력해주세요.">
+								</div>
+							</div>
+							<div class="form_cell">
+								<label for="">
+									직무
+								</label>
+								<div class="form_con flex">
+									<input type="text" placeholder="지원자의 전화번호를 숫자만 입력해주세요.">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div id="myCompany"  class="my-sec">
+						<h4 class="mi_tit">입사지원자 경력/재직 정보</h4>
+						
+						<div class="box">
+							<div class="form_cell">
+								<label>
+									재직기업명
+								</label>
+								<div class="form_con">
+									<input type="text" placeholder="기업명을 입력해주세요.">
+								</div>
+							</div>
+							<div class="form_cell">
+								<label>
+									재직기간
+								</label>
+								<div class="form_con form_date">
+									<input type="date" />
+									<span>-</span>
+									<input type="date" />
+								</div>
+							</div>
+							<div class="form_cell">
+								<input type="checkbox" id="company1" name="companySelect"/>
+								<label for="company1"><i></i>현재 재직 중</label>
+							</div>
+						</div>
+						<div class="t_c mt-20">
+						<button class="btn-type-1 black" type="button">경력 추가하기</button>
+						</div>
+					</div>
+					<!--  -->
+					<div id="myWriter"  class="my-sec">
+						<h4 class="mi_tit">지원자 질문지 선택</h4>
+						<div class="box">
+							<h5 class="sub_tit">질문지</h5>
+							<div>
+
+							</div>
+							<h5 class="sub_tit">컬처핏 확인</h5>
+							<div>
+
+							</div>
+							<h5 class="sub_tit">추가 질문</h5>
+							<div class="form_cell mt-20">
+								<label for="">추가 질문 1</label>
+								<div class="form_con">
+									<input type="text" placeholder="지원자에게 추가적으로 질문할 내용을 적어주세요.">
+								</div>
+							</div>
+							<div class="form_cell">
+								<label for="">추가 질문 2</label>
+								<div class="form_con">
+									<input type="text" placeholder="지원자에게 추가적으로 질문할 내용을 적어주세요.">
+								</div>
+							</div>
+							<div class="form_cell">
+								<label for="">추가 질문 2</label>
+								<div class="form_con">
+									<input type="text" placeholder="지원자에게 추가적으로 질문할 내용을 적어주세요.">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+
+			</div>
+		</div>
+	</div>
+	<script>
+		const btnApplicationReset = document.querySelector(".btn_application_re");
+		const btnApplicationSave = document.querySelector(".btn_application_save");
+		const applicationForm = document.querySelector(".application_wrap");
+		
+		function applicationReset(){
+			btnApplicationReset.style.display ="none";
+			btnApplicationSave.style.display = "block";
+			applicationForm.querySelectorAll("input").forEach(input => input.disabled = false);
+		}
+		function applicationSave(){
+			// 저장 완료 후 
+			btnApplicationReset.style.display = "block";
+			btnApplicationSave.style.display = "none";
+			applicationForm.querySelectorAll("input").forEach(input => input.disabled = true);
+
+		}
+	</script>
+	<div data-include="../../common/footer.html"></div>
+	<script src="/resource/js/jquery.min.js"></script>
+	<script src="/resource/js/jquery.selectric.min.js"></script>
+	<script src="/resource/js/common.js"></script>
+	<script src="/resource/js/sub.js"></script>
+</body>
+
+</html>
