@@ -152,7 +152,7 @@
 /* 마이페이지 서비스 구매 */
 .my_service_buy {max-width: 600px;margin: 0 auto;}
 
-/*  */
+/* 입사지원자 추가 */
 .box {border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding:20px;}
 .form_date input[type="date"]{width: 40%;}
 .form_date span {margin:10px;}
