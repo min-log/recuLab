@@ -20,6 +20,9 @@
 				<section class="mypage_left">
 					<div class="mypage_top">
 						<div class="mypage_user_info">
+							<a href="./main.html" class="my_home">
+								<img src="../../../resource/images/icon/icon_my_b.png" alt="마이페이지 이동">
+							</a>
 							<h2 class="sub_tit">리쿠랩</h2>
 							<span>N차 남음</span>
 						</div>
@@ -74,13 +77,17 @@
 					<p><b>리쿠랩님</b>은 <b>기본 서비스</b>를 이용하고 계십니다. </p>
 					<div class="my_service mt-20">
 						<div class="basic">
-							<label>
+							<input type="radio" name="myService" id="myServiceBasic" checked disabled>
+							<label for="myServiceBasic">
+								<span class="ck"></span>
 								<h5>기본 서비스</h5>
 								<p>설명</p>
 							</label>
 						</div>
 						<div class="hard">
-							<label>
+							<input type="radio" name="myService" id="myServiceHard" disabled>
+							<label for="myServiceHard">
+								<span class="ck"></span>
 								<h5>심화 서비스</h5>
 								<p>설명</p>
 							</label>
