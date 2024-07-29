@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="../../../resource/css/font/font.css" rel="stylesheet" type="text/css" />
+	<link href="../../../resource/css/common/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../../../resource/css/common/selectric.css" rel="stylesheet">
+	<link href="../../../resource/css/common/common.css" rel="stylesheet" type="text/css" />
+	<link href="../../../resource/css/sub/sub.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div data-include="../../common/header.html"></div>
+	<div class="container">
+		<div class="inner">
+			<div class="maypage_wrap">
+				<section class="mypage_left">
+					<div class="mypage_top">
+						<div class="mypage_user_info">
+							<a href="./main.html" class="my_home">
+								<img src="../../../resource/images/icon/icon_my_b.png" alt="마이페이지 이동">
+							</a>
+							<h2 class="sub_tit">리쿠랩</h2>
+							<span>N차 남음</span>
+						</div>
+						<div class="mypage_menu">
+							<ul>
+								<li>
+									<a href="./applicant_add.html">
+										<img src="../../../resource/images/icon/icon_my_user_a.png" alt="">
+										입사지원자 추가
+									</a>
+								</li>
+								<li>
+									<a href="./my_service.html">
+										<img src="../../../resource/images/icon/icon_my_service.png" alt="">
+										서비스 정보
+									</a>
+								</li>
+								<li>
+									<a href="./my_survey.html">
+										<img src="../../../resource/images/icon/icon_my_list.png" alt="">
+										기본 질문지 확인
+
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="mypage_pro">
+						<li>
+							<p>개인정보 작성</p>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<p>레퍼런스 체크</p>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<p>레퍼런스 체크 완료</p>
+							<span class="num">3</span>
+						</li>
+					</ul>
+
+				</section>
+				<section class="mypage_content">
+					<h3 class="sub_tit">백엔드 개발자 채용</h3>
+					<div class="info_box mt-20">
+							리큐랩의 간단한 설명.
+							리큐랩은 ~~~~~~~~~~~~~~~입니다. ~~~~~~~~~합니다.
+					</div>
+					<!--  -->
+					<h4 class="mi_tit mt-50">이용서비스</h4>
+					<p><b>리쿠랩님</b>은 <b>기본 서비스</b>를 이용하고 계십니다. </p>
+					<div class="my_service mt-20">
+						<div class="basic">
+							<input type="radio" name="myService" id="myServiceBasic" checked disabled>
+							<label for="myServiceBasic">
+								<span class="ck"></span>
+								<h5>기본 서비스</h5>
+								<p>설명</p>
+							</label>
+						</div>
+						<div class="hard">
+							<input type="radio" name="myService" id="myServiceHard" disabled>
+							<label for="myServiceHard">
+								<span class="ck"></span>
+								<h5>심화 서비스</h5>
+								<p>설명</p>
+							</label>
+						</div>
+					</div>
+					<button class="btn-type-1 mt-20 w-full">서비스 신청하기</button>
+					<!--  -->
+					<h4 class="mi_tit mt-50">지원자 관리</h4>
+					<p><b>리쿠랩</b>님은 지원자 N명의 레퍼런스 체크를 진행하고 계십니다. </p>
+					<p class="i_txt mt-10">
+						<img class="icon_info" src="../../../resource/images/icon/icon_info.png" alt="">
+						이름을 누르시면 지원자를 수정/ 삭제하실 수 있습니다.
+					</p>
+					<p class="t_r mt-10">
+						<a href="#">
+							리포트 전체 다운로드
+							<img class="i_down ml-10" src="../../../resource/images/icon/icon_my_download.png" alt="다운로드" style="vertical-align: middle;margin-top:-5px">
+						</a>
+					</p>
+
+					<div class="search_wrap mt-20">
+						<!-- <select>
+							<option>필터링</option>
+							<option>이름 (오름/내림차)</option>
+							<option>부서1</option>
+							<option>부서2</option>
+							<option>직무1</option>
+							<option>직무2</option>
+							<option>진행상황</option>
+							<option>마감날짜</option>
+							<option>합격여부</option>
+						</select> -->
+						<select>
+							<option>부서 선택</option>
+							<option>부서1</option>
+							<option>부서2</option>
+						</select>
+						<select>
+							<option>직무 선택</option>
+							<option>직무1</option>
+							<option>직무2</option>
+						</select>
+						<select>
+							<option>진행현황</option>
+							<option>임시저장</option>
+							<option>개인정보 작성</option>
+							<option>레퍼런스 체크</option>
+							<option>완료</option>
+						</select>
+						<p class="search_input">
+							<input type="text" placeholder="검색">
+							<button>
+								<img src="../../../resource/images/icon/icon_search.png" alt="검색">
+							</button>
+						</p>
+					</div>
+					
+					<table class="t_c mt-20">
+						<colgroup>
+							<col style="width: 150px;"/>
+							<col style="width: auto;" />
+							<col style="width: 100px;" />
+							<col style="width: 150px;" />
+							<col style="width: 100px;" />
+							<col style="width: 80px;" />
+							<col style="width: 80px;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th>이름</th>
+								<th>부서</th>
+								<th>직무</th>
+								<th>진행현황</th>
+								<th>마감 날짜</th>
+								<th>합격여부</th>
+								<th>리포트</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="./applicant.html">이인규</a>
+								</td>
+								<td>***</td>
+								<td>***</td>
+								<td>
+									<span class="i_status stap1">개인정보 작성</span>
+								</td>
+								<td>24-07-10</td>
+								<td>
+									<span class="i_yn y">○</span>
+								</td>
+								<td>
+									<a href="#"><img class="i_down" src="../../../resource/images/icon/icon_my_download.png" alt=""></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="./applicant.html">홍길동</a>
+								</td>
+								<td>***</td>
+								<td>***</td>
+								<td>
+									<span class="i_status stap2">레퍼런스 체크</span>
+								</td>
+								<td>24-07-10</td>
+								<td>
+									<span class="i_yn y">○</span>
+								</td>
+								<td>
+									<a href="#"><img class="i_down" src="../../../resource/images/icon/icon_my_download.png" alt=""></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">홍길동</a>
+								</td>
+								<td>***</td>
+								<td>***</td>
+								<td>
+									<span class="i_status result">완료</span>
+								</td>
+								<td>24-07-10</td>
+								<td>
+									<span class="i_yn y">○</span>
+								</td>
+								<td>
+									<a href="#"><img class="i_down" src="../../../resource/images/icon/icon_my_download.png" alt=""></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">홍길동</a>
+								</td>
+								<td>***</td>
+								<td>***</td>
+								<td>
+									<span class="i_status temp">임시저장</span>
+								</td>
+								<td>24-07-28</td>
+								<td>
+									<span class="i_yn x">×</span>
+								</td>
+								<td>
+									<a href="#"><img class="i_down" src="../../../resource/images/icon/icon_my_download.png" alt=""></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+	<div data-include="../../common/footer.html"></div>
+	<script src="../../../resource/js/jquery.min.js"></script>
+	<script src="../../../resource/js/jquery.selectric.min.js"></script>
+	<script src="../../../resource/js/common.js"></script>
+	<script src="../../../resource/js/sub.js"></script>
+</body>
+
+</html>
