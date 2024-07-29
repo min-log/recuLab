@@ -189,7 +189,7 @@
 							<div class="form_cell">
 								<lable>질문지</lable>
 								<div class="mt-10 form_con">
-									<a href="#" class="btn-type-1 black">기본 질문지 확인</a>
+									<a href="javascript:surveyPopupShow()" class="btn-type-1 black">기본 질문지 확인</a>
 								</div>
 							</div>
 							<div class="form_cell">
@@ -356,8 +356,37 @@
 			</div>
 		</div>
 	</div>
+	
+
+	<div class="popup_wrap pop_survey">
+		<div class="popup_top">
+			<h5>질문지 확인하기</h5>
+			<a href="javascript:popupClose()" class="btn_close" title="팝업 닫기"></a>
+		</div>
+		<div class="popup_content">
+			<p class="sub_tit">인사담당자에게 가는 질문입니다.</p>
+			<ul class="tab-box">
+				<li class="active">
+					<a href="#">인사담당자</a>
+				</li>
+				<li>
+					<a href="#">평가자</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div data-include="../../subvey/subvey.html"></div>
+			</div>
+		</div>
+	</div>
 	<script>
-		
+		const popupServey = document.querySelector(".pop_survey");
+		function surveyPopupShow(){
+			const body = document.querySelector("body");
+			const bg = document.querySelector(".bg_wrap");
+			body.style.overflow = "hidden";
+			bg.style.display = "block";
+			popupServey.style.display = "block";
+		}	
 	</script>
 	<div data-include="../../common/footer.html"></div>
 	<script src="../../../resource/js/jquery.min.js"></script>

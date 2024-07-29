@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 document.addEventListener('DOMContentLoaded', function () {
 
 	// S : 헤더 푸터 --- 개발 후 제거 필요
@@ -24,13 +25,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-
-// 셀렉트
 function selectOpen(button) {
-	// 모든 .select-con 요소 숨기기
-	document.querySelectorAll('.select-con').forEach(function (con) {
+	// 클릭된 버튼의 부모 요소 중 가장 가까운 .select-type-1 요소를 찾기
+	var selectType1 = button.closest('.select-type-1');
+
+	// .select-type-1 요소 내의 모든 .select-con 요소 숨기기
+	selectType1.querySelectorAll('.select-con').forEach(function (con) {
 		if (con !== button.nextElementSibling) {
-			button.classList.remove('active');
 			con.classList.remove('show');
 		}
 	});
@@ -38,11 +39,23 @@ function selectOpen(button) {
 	// 클릭된 버튼의 다음 형제 요소인 .select-con 요소 보이기 또는 숨기기
 	var selectCon = button.nextElementSibling;
 	if (selectCon && selectCon.classList.contains('select-con')) {
-		button.classList.toggle('active');
 		selectCon.classList.toggle('show');
 	}
-
 }
+
+// 외부 클릭 시 닫힘
+document.addEventListener('click', function (event) {
+	// 모든 .select-type-1 요소에 대해 처리
+	document.querySelectorAll('.select-type-1').forEach(function (selectType1) {
+		var isClickInside = selectType1.contains(event.target);
+		if (!isClickInside) {
+			selectType1.querySelectorAll('.select-con').forEach(function (con) {
+				con.classList.remove('show');
+			});
+		}
+	});
+});
+
 
 // 로딩 화면 보이기 함수
 function loadingShow() {
@@ -80,6 +93,15 @@ function msgHide() {
 }
 
 
+// 팝업 닫기
+function popupClose(){
+	const bg = document.querySelector(".bg_wrap");
+	const popup = document.querySelector(".popup_wrap");
+	body.style.overflow = "auto";
+	bg.style.display = "none";
+	popup.style.display = "none";
+
+}
 
 
 

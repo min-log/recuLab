@@ -150,7 +150,7 @@
 .my_service_pick .hard ul li .num {display: block;color: var(--color-type-black);font-weight: bold;}
 
 /* 마이페이지 서비스 구매 */
-.my_service_buy {max-width: 600px;margin: 0 auto;}
+.my_service_buy {margin: 0 auto;}
 
 /* 입사지원자 추가 */
 .box {border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding:20px;}
@@ -174,5 +174,28 @@
 .tab li a {}
 
 .survey_wrap {}
-.survey_tit {}
-.survey_con {}
+.survey_sec {border-radius: var(--border-rd);border: 1px solid var(--color-type-gray-1);padding: 50px;position: relative;}
+.survey_sec + .survey_sec {margin-top: 100px;}
+.survey_tit {font-size: var(--font-size-big);text-align: left;font-weight: bold;}
+.survey_tit i {font-size: var(--font-size-big);font-style: normal;font-weight: bold;display: block;background: var(--color-main);width: 40px;height: 40px;text-align: center;border-radius: 50%;line-height: 40px;border: 1px solid var(--color-type-gray-1);/* margin-bottom: 20px; */display: inline-block;position: absolute;left: 0;top: 0;margin-top: -20px;margin-left: 20px;font-size: px;}
+.survey_con {margin-top: 50px;}
+.survey_con::after {content: '';display: block;clear: both;}
+.survey_con textarea {width: 100% !important;height: 150px;resize: none;}
+.survey_con .t_left {float: left;margin-top: 10px;}
+.survey_con .t_right {float: right;margin-top: 10px;}
+.survey_btn {display: flex;justify-content: center;align-items: center;}
+.survey_btn [class*="btn-"] {width: 200px;background-color: var(--color-type-gray-bg);animation: none;}
+.survey_btn [class*="btn-"] +[class*="btn-"] {margin-left: 20px;}
+.survey_btn [class*="btn-"]:hover {background-color: var(--color-type-gray-2);}
+.survey_radio {display: flex;border: 1px solid var(--color-type-black);border-radius: var(--border-rd);overflow: hidden;}
+.survey_radio label {display:block;width: 100%;cursor: pointer;}
+.survey_radio label + label {border-left: 1px solid var(--color-type-black);}
+.survey_radio label input[type="radio"] + span {text-align: center;padding:10px 10px;background: var(--color-type-gray-bg);display: block;font-weight: bold;}
+.survey_radio label input[type="radio"]:checked + span {background-color: var(--color-main) !important;}
+.survey_radio label:hover input[type="radio"] + span {background-color: var(--color-type-gray-2);}
+
+.tab-box {margin-top:50px;display: flex;border-bottom: 1px solid var(--color-type-gray-1);}
+.tab-box li a {padding:10px 20px;border:1px solid var(--color-type-gray-1);border-top-left-radius: var(--border-rd);border-top-right-radius: var(--border-rd);border-bottom: 0;}
+.tab-box li.active a {background-color: var(--color-main);font-weight: bold;}
+.tab-content {margin-top: 50px;}
+
