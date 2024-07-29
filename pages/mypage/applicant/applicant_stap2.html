@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="../../../resource/css/font/font.css" rel="stylesheet" type="text/css" />
+	<link href="../../../resource/css/common/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../../../resource/css/common/selectric.css" rel="stylesheet">
+	<link href="../../../resource/css/common/common.css" rel="stylesheet" type="text/css" />
+	<link href="../../../resource/css/sub/sub.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div data-include="../../common/header.html"></div>
+	<div class="container">
+		<div class="inner">
+			<div class="maypage_wrap">
+				<section class="mypage_left">
+					<div class="mypage_top">
+						<div class="mypage_user_info">
+							<a href="./main.html" class="my_home">
+								<img src="../../../resource/images/icon/icon_my_b.png" alt="마이페이지 이동">
+							</a>
+							<h2 class="sub_tit">홍길동</h2>
+							<span>진행상황</span>
+						</div>
+						<div class="mypage_menu">
+							<ul>
+								<li>
+									<a href="./applicant_stap1.html">
+										<img src="../../../resource/images/icon/icon_my_service.png" alt="">
+										약관 확인하기
+									</a>
+								</li>
+								<li class="active">
+									<a href="./applicant_stap2.html">
+										<img src="../../../resource/images/icon/icon_my_list_ck.png" alt="">
+										레퍼런스 체크
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="mypage_pro">
+						<li>
+							<p>요청 레퍼런스</p>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<p>작성 중 레퍼런스</p>
+							<span class="num">3</span>
+						</li>
+						<li>
+							<p>완료 레퍼런스</p>
+							<span class="num">3</span>
+						</li>
+					</ul>
+
+				</section>
+				<section class="mypage_content">
+					<ul class="join_stap">
+						<li>약관동의</li>
+						<li class="active">정보확인</li>
+						<li>완료</li>
+					</ul>
+					<div class="applicant_stap1">
+						<div class="mt-100">
+							<h2 class="sub_tit">정보 확인</h2>
+							<p class="mt-10">
+								나의 정보가 맞는지 확인 후 체크해 주세요.
+							</p>
+						</div>
+						<div id="myApplication" class="mt-50">
+							<h3 class="mi_tit">개인정보</h3>
+							<div class="application_wrap ">
+								<table>
+									<colgroup>
+										<col style="width: 150px;">
+										<col style="width:calc(100% - 100px);">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th class="t_c">이메일</th>
+											<td>
+												test@naver.com
+											</td>
+										</tr>
+										<tr>
+											<th class="t_c">연락처</th>
+											<td>
+												010-1111-1111
+											</td>
+										</tr>
+										<tr>
+											<th class="t_c">부서</th>
+											<td>
+												웹개발팀
+											</td>
+										</tr>
+										<tr>
+											<th class="t_c">직무</th>
+											<td>
+												개발
+											</td>
+										</tr>
+										<tr>
+											<th class="t_c">마감일</th>
+											<td>2024.07.28 (9일전)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="mt-20">
+								<input id="myApplicationCK" type="checkbox">
+								<label for="myApplicationCK" class="btn_input_check">
+									<i></i>
+									기본 정보가 맞습니다.
+								</label>
+							</div>
+						</div>
+						<div class="my-sec">
+							<h3 class="mi_tit">경력/재직 정보</h3>
+							<table class="t_c mt-20">
+								<colgroup>
+									<col style="width: auto;">
+									<col style="width: 100px;">
+									<col style="width: 100px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="bg" colspan="3">현제 재직 기업</th>
+									</tr>
+									<tr>
+										<th>기업명</th>
+										<th>입사년월</th>
+										<th>퇴직년월</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											(주)인큐
+										</td>
+										<td>22-07</td>
+										<td>24-12</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="t_c mt-20">
+								<colgroup>
+									<col style="width: auto;">
+									<col style="width: 100px;">
+									<col style="width: 100px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="bg" colspan="3">과거 재직 기업</th>
+									</tr>
+									<tr>
+										<th>기업명</th>
+										<th>입사년월</th>
+										<th>퇴직년월</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											삼성전자
+										</td>
+										<td>22-07</td>
+										<td>24-12</td>
+									</tr>
+									<tr>
+										<td>
+											테스트
+										</td>
+										<td>22-07</td>
+										<td>24-12</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="mt-20">
+								<input type="checkbox">
+								<label for="" class="btn_input_check">
+									<i></i>
+									해당 정보가 맞습니다.
+								</label>
+							</div>
+						</div>
+
+						<div class="mt-10">
+							<a href="#" class="btn-type-1 w-full">다음</a>
+						</div>
+						
+					</div>
+
+
+				</section>
+
+			</div>
+		</div>
+	</div>
+	<div data-include="../../common/footer.html"></div>
+	<script src="../../../resource/js/jquery.min.js"></script>
+	<script src="../../../resource/js/jquery.selectric.min.js"></script>
+	<script src="../../../resource/js/common.js"></script>
+	<script src="../../../resource/js/sub.js"></script>
+</body>
+
+</html>

@@ -92,6 +92,7 @@ footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;
 [class*="btn-"]:hover {animation: bounce .6s ease;}
 [class*="btn-"]:disabled {background: var(--color-type-gray-bg);color:var(--color-type-gray-1);animation: infinite;}
 
+
 /* IE */
 input[type="date"]::placeholder,
 input[type="password"]::placeholder,
@@ -176,16 +177,19 @@ select::-ms-expand {display: none;}
 .sub_tit {font-size:var(--font-size-big);font-weight: 600;}
 .mi_tit{font-size:var(--font-size-middle);font-weight: 600;}
 .f_sm {font-size:12px;}
+
+
 input[type="checkbox"] {width: 0;height: 0;position: absolute;}
 input[type='checkbox'] + label{
   position: relative;
-  display: flex;
+  display: inline-block;
   align-items: center;
   cursor: pointer;
 }
 
 input[type='checkbox']+label>i {
-	display: flex;
+	display: inline-block;
+	vertical-align: middle;
 	justify-content: center;
 	align-items: center;
 	margin-right: 10px;
@@ -196,6 +200,7 @@ input[type='checkbox']+label>i {
 	border-radius: 2px;
 	cursor: pointer;
 	transition: all 250ms cubic-bezier(.4, .0, .23, 1);
+	position: relative;
 }
 input[type='checkbox']+label:hover>i,
 input[type='checkbox']:focus+label>i {
@@ -211,58 +216,12 @@ input[type='checkbox']:checked+label>i {
 input[type='checkbox']:checked+label>i:before {
 	content: "";
 	position: absolute;
-	top: .6em;
-	left: .3em;
+	top: 0;
+	left:0;
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
 	transform: rotate(45deg);
-	transform-origin: 0% 100%;
-	animation: checkbox-check 125ms 250ms cubic-bezier(.4, .0, .23, 1) forwards;
-}
-
-
-
-input[type="checkbox"] {width: 0;height: 0;position: absolute;}
-input[type='checkbox'] + label{
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-input[type='checkbox']+label>i {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 10px;
-	width: 20px;
-	height: 20px;
-	background: transparent;
-	border: 1px solid var(--color-type-black);
-	border-radius: 2px;
-	cursor: pointer;
-	transition: all 250ms cubic-bezier(.4, .0, .23, 1);
-}
-input[type='checkbox']+label:hover>i,
-input[type='checkbox']:focus+label>i {
-	background: rgba(255, 255, 255, .1);
-}
-
-input[type='checkbox']:checked+label>i {
-	border: .6em solid var(--color-main);
-	background-color: var(--color-main);
-	animation: shrink-bounce 200ms cubic-bezier(.4, .0, .23, 1);
-}
-
-input[type='checkbox']:checked+label>i:before {
-	content: "";
-	position: absolute;
-	top: .6em;
-	left: .3em;
-	border-right: 3px solid transparent;
-	border-bottom: 3px solid transparent;
-	transform: rotate(45deg);
-	transform-origin: 0% 100%;
+	transform-origin: 0% 50%;
 	animation: checkbox-check 125ms 250ms cubic-bezier(.4, .0, .23, 1) forwards;
 }
 
@@ -366,11 +325,11 @@ input[type='radio']:checked+label>i:before {
 .flex {display: flex;}
 table {table-layout: fixed;width: 100%;}
 table th,
-table td {border:1px solid var(--color-type-gray-1);padding:5px 10px;text-align: left;}
+table td {border:1px solid var(--color-type-gray-1);padding:5px 10px;text-align: left;line-height: 40px;}
 table th{background: var(--color-type-gray-bg);}
 table.t_c th,
 table.t_c td {text-align: center;}
-table th.bg {background-color: var(--color-main);}
+table th.bg {background-color: var(--color-type-black);line-height: inherit;color: #fff;text-align: left;}
 
 .bg_wrap {position: fixed;top:0;left:0;z-index: 900;width: 100vw;height: 100vh;background: #000;opacity: 0.2;display: none;}
 .loading_wrap {position: fixed;top:50%;left:50%;z-index: 1000;transform: translate(-50%,-50%);display: none;}
@@ -390,3 +349,4 @@ table th.bg {background-color: var(--color-main);}
 .popup_top h5 {font-size: var(--font-size-big);}
 .popup_content {padding:40px;max-height: 70vh;overflow: hidden;overflow-y: auto;}
 .btn_close {width:30px;height:30px;background: url("../../images/icon/icon_close.png") center no-repeat;background-size: 30px;}
+.btn_input_check {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);animation: none !important;padding:20px;width: 100%;}
