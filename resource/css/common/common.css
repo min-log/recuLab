@@ -350,3 +350,7 @@ table th.bg {background-color: var(--color-type-black);line-height: inherit;colo
 .popup_content {padding:40px;max-height: 70vh;overflow: hidden;overflow-y: auto;}
 .btn_close {width:30px;height:30px;background: url("../../images/icon/icon_close.png") center no-repeat;background-size: 30px;}
 .btn_input_check {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);animation: none !important;padding:20px;width: 100%;}
+
+@media screen and (max-width:720) {
+	
+}

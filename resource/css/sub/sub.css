@@ -1,3 +1,4 @@
+header .list {display: none !important;}
 .container_wrap {margin-top: 100px;margin-bottom: 100px;}
 .center_content {display: flex;align-items: center;flex-direction: column;}
 
@@ -199,3 +200,18 @@
 .tab-box li.active a {background-color: var(--color-main);font-weight: bold;}
 .tab-content {margin-top: 50px;}
 
+@media screen and (max-width:900px) {
+	/*서비스 소개 신청서 */
+	.service_wrap {display: block;}
+	.service_wrap .service_img {width: 100%;padding: 40px;margin-right: 20px;}
+	.service_wrap .service_from {width: 100%;margin-top:20px; display: flex;flex-direction: column-reverse;}
+	.service_wrap .service_from .info_box {margin-top:50px;}
+	.service_agree_wrap {padding:0 0 0 20px;}
+	.service_agree_box {padding: 10px;font-size: 12px;}
+}
+@media screen and (max-width:720px) {
+
+	
+
+
+}
