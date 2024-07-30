@@ -170,7 +170,7 @@ select::-ms-expand {display: none;}
 
 
 .show {display: block !important;}
-.err {color:var(--color-err);}
+.err {color:var(--color-err);display:none;}
 .icon_err {display: inline-block;width: 15px;height: auto;vertical-align: middle;}
 .icon_info {display: inline-block;width: 15px;height: auto;vertical-align: middle;}
 .i_txt {text-indent: -18px;padding-left:20px}
