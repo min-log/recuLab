@@ -11,7 +11,7 @@
 
 
 .main_sec_2 {background-color: #fff;padding:100px 0;}
-.main_sec_3 {background-color: var(--color-main);padding:100px 0;}
+.main_sec_3 {background-color: var(--color-main);padding:100px 0;overflow: hidden;position: relative;}
 .main_sec_4 {background-color: var(--color-type-gray-bg);padding:100px 0;}
 .main_sec_5 {background-color: rgb(255, 207, 62);padding:100px 0;}
 
@@ -21,8 +21,16 @@
 .main_logo_wrap li img {max-width:100%;max-height: 50px;display: inline-block;}
 .main_logo_wrap li + li + li+li+li+li {margin-top:40px;}
 
-.main_process, .card_wrap {display: flex;flex-wrap:wrap;}
-.card_wrap > li + li + li + li {margin-top:20px;}
+.main_process {display: flex;flex-wrap:wrap;}
+.main_sec_3 .swiper-container {padding: 0;}
+.main_sec_3 .swiper-button-next,
+.main_sec_3 .swiper-button-prev,
+.main_sec_3 .swiper-pagination  {display: none;color:#000;}
+.main_sec_3 .swiper-pagination {height: 20px;}
+.main_sec_3 .swiper-pagination-bullet {width: 12px;height: 12px;}
+.main_sec_3 .swiper-pagination-bullet-active {background-color: #000;}
+.card_wrap.swiper-wrapper {display: block;}
+.card_wrap .item {margin-top:20px;width: calc(33% - 20px);float: left;background-color: #fff;border-radius: var(--border-rd);padding:20px;margin:10px;}
 .card_wrap .card_tit {display: flex;margin-top:10px}
 .card_wrap .card_tit * {font-size: var(--font-size-normal);}
 .card_wrap .card_con {margin-top:10px;}
@@ -33,12 +41,25 @@
 .card_item {background-color: #fff;border-radius: var(--border-rd);padding: 20px;width: calc(33.33% - 15px);margin-right: 20px;}
 .card_item:nth-child(3n) {margin-right: 0;}
 
+@media screen and (max-width:900px) {
+
+	.card_wrap.swiper-wrapper {display: flex;}
+	.card_wrap .item {width: 100%;margin:0;}
+	.main_sec_3 .swiper-container {margin-top:100px}
+	.main_sec_3 .swiper-button-next,
+	.main_sec_3 .swiper-button-prev,
+	.main_sec_3 .swiper-pagination  {display: block;}	
+	.main_sec_3 .swiper-button-next,
+	.main_sec_3 .swiper-button-prev {top:150px}
+	.main_sec_3 .swiper-pagination {top:230px}
+
+}
 @media screen and (max-width:720px) {
 
 	.main_sec_1 br {display: none;}
 	.main_logo_wrap li {width: calc(100% / 4);}
 	.main_logo_wrap li+li+li+li+li {margin-top:20px !important;}
-	.card_item {width: calc(50% - 20px);}
+	
 	
 
 	
