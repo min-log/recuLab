@@ -103,7 +103,22 @@ function popupClose(){
 
 }
 
+const menuPopup = document.getElementById("menuPopup");
+function menuPopupShow(event) {
+	const target = event; // 클릭된 요소를 참조합니다.
 
+	if (target) { // target이 존재하는지 확인합니다.
+		target.classList.toggle("active"); // active 클래스를 토글합니다.
 
+		// menuPopup 표시 상태를 토글합니다.
+		if (menuPopup.style.display === "block") {
+			menuPopup.style.display = "none";
+		} else {
+			menuPopup.style.display = "block";
+		}
+	} else {
+		console.error("이벤트 대상이 정의되지 않았습니다.");
+	}
+}
 
 
