@@ -15,23 +15,21 @@ header .list {display: none !important;}
 .info_txt {border-bottom: 1px solid var(--color-type-black);padding:1px 5px;vertical-align: middle;display: inline-block;margin: 0 0 5px;font-weight: bold;}
 
 /* 회원가입 페이지 */
-.join_form {width: 600px;}
+.join_form {max-width: 600px;width: 100%;}
 .join_select li a {border-radius: var(--border-rd);border:1px solid var(--color-type-black);padding:20px;display: flex;align-items: center;transition: all 0.5s ease;}
 .join_select li + li {margin-top:20px}
 .join_select .img_box {width: 80px;height: 80px;border-radius: var(--border-rd);display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: center;flex-direction: row;margin-right: 40px;}
 .join_select .img_box img {width: 100px;transition: all 0.5s ease;}
 .join_select li:nth-child(2n) a {justify-content:flex-end;text-align: right;}
 .join_select li:nth-child(2n) .img_box {margin-right: 0;margin-left: 40px;}
-.join_select li:hover a {background: rgb(243, 217, 109);
-	/* background: linear-gradient(20deg, rgba(243, 217, 109, 0) 0%, rgba(243, 217, 109, 1) 70%); */
-}
+.join_select li:hover a {background: rgb(243, 217, 109);}
 .join_select li:hover .img_box img {filter:inherit;transform: scale(1.4);}
 .join_stap {display: flex;justify-content:space-between;margin:0 auto;max-width: 600px;}
-.join_stap li {width: 100px;height: 100px;padding: 0px 0;border-radius: 50px;background:var(--color-type-gray-bg);position: relative;text-align: center;border: 2px solid var(--color-type-gray-2);/* color: var(--color-type-gray-1); */display: flex;justify-content: center;align-items: center;transition: all 1s ease;}
-.join_stap li + li::after {content: '';display: block;width: 160%;height: auto;position: absolute;top:50%;right: 100%;transform: translate(0,50%);border-top: 2px var(--color-type-gray-2) dashed;z-index: -1;}
+.join_stap li {width: 100px;height: 100px;padding: 0px 0;border-radius: 50px;background:var(--color-type-gray-bg);position: relative;text-align: center;border: 2px solid var(--color-type-gray-2);/* color: var(--color-type-gray-1); */display: flex;justify-content: center;align-items: center;transition: all 1s ease;z-index: 2;}
+.join_stap li + li::after {content: '';display: block;width: 160%;height: auto;position: absolute;top:50%;right: 100%;transform: translate(0,50%);border-top: 2px var(--color-type-gray-2) dashed;z-index: 0;}
 .join_stap li.active {background:var(--color-main);color: var(--color-type-black);font-weight: bold;border-color:var(--color-type-black)}
 .join_stap li.active::after {border-color: var(--color-type-black);}
-.join_content {max-width: 800px;margin:0 auto;}
+.join_content {max-width: 800px;margin:0 auto;width: 100%;}
 .join_agreement_wrap {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);padding:20px;height: 200px;overflow: hidden;overflow-y: auto;}
 .form_cell + .form_cell {margin-top: 20px;}
 .form_cell label {margin-bottom: 10px;display: inline-block;}
@@ -218,9 +216,10 @@ header .list {display: none !important;}
 	.service_agree_wrap {padding:0 0 0 20px;}
 	.service_agree_box {padding: 10px;font-size: 12px;}
 }
+
 @media screen and (max-width:720px) {
 
-	.container_wrap {margin-top: 80px;margin-bottom: 80px;}
+	.container_wrap {margin-top: 50px;margin-bottom: 50px;}
 	.logo {width: 50px;}
 
 
@@ -231,6 +230,26 @@ header .list {display: none !important;}
 	.login_i a + a:after {position: absolute;top:50%;left:0;transform: translateY(-50%);content:'';display: block;border-left:1px solid var(--color-type-gray-1);width: 1px;height: 10px;}
 	.info_box {border:1px solid var(--color-type-gray-1);background: var(--color-type-gray-bg);padding:20px 20px;border-radius: var(--border-rd);}
 	.info_txt {border-bottom: 1px solid var(--color-type-black);padding:1px 5px;vertical-align: middle;display: inline-block;margin: 0 0 5px;font-weight: bold;}
+
+	/* 회원가입 페이지 */
+	.join_select li a {padding:20px;}
+	.join_select li + li {margin-top:20px}
+	.join_select .img_box {width: 80px;height: 80px;margin-right: 40px;}
+	.join_select .img_box img {width: 100px;}
+	.join_select li:nth-child(2n) .img_box {margin-right: 0;margin-left: 40px;}
+	.join_stap {width: 400px;}
+	.join_stap li {width: 100px;height: 100px;}
+	.join_stap li+li::after {width: 50px;}
+
+	.join_agreement_wrap {padding:20px;height: 200px;}
+	.form_cell + .form_cell {margin-top: 20px;}
+	.form_cell label {margin-bottom: 10px;}
+	.form_table .form_cell label {width: 20%;min-width: 100px;}
+	.form_con + .form_con {margin-top:10px}
+	.form_con input + input {margin-left: 10px;}
+	.form_email input[type="text"] {width: 30%;margin-right: 10px;}
+	.form_email .form_email select,
+	.form_email .selectric-wrapper {width: 70%;margin-left: 10px;}
 
 
 }
