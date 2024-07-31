@@ -51,8 +51,8 @@ h1,h2,h3,h4,h5,h6 {margin: 0;}
 img {max-width: 100%;}
 *,
 html,
-body {color: var(--color-type-black);font-family: 'nanum', 'Arial', Arial, Dotum;font-size: var(--font-size-normal);line-height: 1.6;box-sizing: border-box;word-break: keep-all;scroll-behavior: smooth;background:#fff;}
-html,body {overflow: hidden;overflow-y: auto;}
+body {color: var(--color-type-black);font-family: 'nanum', 'Arial', Arial, Dotum;font-size: var(--font-size-normal);line-height: 1.6;box-sizing: border-box;word-break: keep-all;scroll-behavior: smooth;}
+html,body {overflow: hidden;overflow-y: auto;background: #fff;}
 button {padding:0;box-sizing: border-box;background: #fff;border:0;box-sizing: border-box;display: inline-block;}
 .inner {padding:0 40px;max-width:1200px;margin:0 auto;width: 100%;}
 .container {padding-top:80px;min-height: calc(100vh - 140px);clear: both;}
