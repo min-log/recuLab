@@ -32,3 +32,14 @@
 
 .card_item {background-color: #fff;border-radius: var(--border-rd);padding: 20px;width: calc(33.33% - 15px);margin-right: 20px;}
 .card_item:nth-child(3n) {margin-right: 0;}
+
+@media screen and (max-width:720px) {
+
+	.main_sec_1 br {display: none;}
+	.main_logo_wrap li {width: calc(100% / 4);}
+	.main_logo_wrap li+li+li+li+li {margin-top:20px !important;}
+	.card_item {width: calc(50% - 20px);}
+	
+
+	
+}
