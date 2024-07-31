@@ -4,7 +4,7 @@ header .list {display: none !important;}
 .logo {width: 50px;height: auto;}
 
 /* 로그인 페이지 */
-.login_form {width: 400px;}
+.login_form {max-width: 400px;width: 100%;}
 .login_form input[type="text"],
 .login_form input[type="password"] {width: 100%;}
 .login_form input[type="password"] {margin-top:10px}
@@ -220,7 +220,17 @@ header .list {display: none !important;}
 }
 @media screen and (max-width:720px) {
 
-	
+	.container_wrap {margin-top: 80px;margin-bottom: 80px;}
+	.logo {width: 50px;}
+
+
+	/* 로그인 페이지 */
+	.login_form input[type="password"] {margin-top:10px}
+	.login_i {display:flex;justify-content: center;}
+	.login_i a {padding:0 10px;position: relative;}
+	.login_i a + a:after {position: absolute;top:50%;left:0;transform: translateY(-50%);content:'';display: block;border-left:1px solid var(--color-type-gray-1);width: 1px;height: 10px;}
+	.info_box {border:1px solid var(--color-type-gray-1);background: var(--color-type-gray-bg);padding:20px 20px;border-radius: var(--border-rd);}
+	.info_txt {border-bottom: 1px solid var(--color-type-black);padding:1px 5px;vertical-align: middle;display: inline-block;margin: 0 0 5px;font-weight: bold;}
 
 
 }

@@ -354,10 +354,10 @@ table th.bg {background-color: var(--color-type-black);line-height: inherit;colo
 
 @media screen and (max-width:720px) {
 	.inner {padding:0 20px;margin:0 auto;}
-	.section_container{padding-top:50px;min-height: calc(100vh - 140px);clear: both;}
+	.section_container{padding-top:60px;min-height: 100vh;}
 
 	/*header*/
-	header {height: 60px;padding:10px 0;position: block;}
+	header {height: 60px;padding:10px 0;}
 	header .logo {width: 50px;}
 	header [class*="btn-"] {height: 30px;line-height: 30px;padding:0 10px;}
 	.header_wrap {justify-content: space-between;}
@@ -391,8 +391,8 @@ table th.bg {background-color: var(--color-type-black);line-height: inherit;colo
 	}
 
 
-	.icon_err {display: inline-block;width: 15px;height: auto;vertical-align: middle;}
-	.icon_info {display: inline-block;width: 15px;height: auto;vertical-align: middle;}
+	.icon_err {width: 15px;}
+	.icon_info {width: 15px;}
 	
 	.i_txt {text-indent: -18px;padding-left:20px}
 
