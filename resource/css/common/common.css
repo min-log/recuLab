@@ -54,8 +54,8 @@ html,
 body {color: var(--color-type-black);font-family: 'nanum', 'Arial', Arial, Dotum;font-size: var(--font-size-normal);line-height: 1.6;box-sizing: border-box;word-break: keep-all;scroll-behavior: smooth;}
 
 button {padding:0;box-sizing: border-box;background: #fff;border:0;box-sizing: border-box;display: inline-block;}
-.inner {padding:0 40px;max-width:1200px;margin:0 auto;}
-.container {padding-top:80px;min-height: calc(100vh - 140px);}
+.inner {padding:0 40px;max-width:1200px;margin:0 auto;width: 100%;}
+.container {padding-top:80px;min-height: calc(100vh - 140px);clear: both;}
 
 /*header*/
 header {height: 80px;padding:20px 0;border-bottom: 1px solid var(--color-type-gray-2);position: fixed;z-index:100;width:100%;background-color: #fff;}
@@ -68,7 +68,7 @@ header .logo {width: 50px;height: auto;vertical-align: middle;}
 .menu_wrap .list li + li {margin-left: 20px;}
 
 /*footer*/
-footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;clear: both;}
+footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;clear: both;overflow: hidden;}
 .footer_top {display: flex;justify-content: space-between;align-items: center;}
 .footer_top .lang select {background-color: var(--color-type-gray-bg);}
 .footer_top .lang .selectric {width: 160px;height:35px;line-height: 35px;background-color: var(--color-type-gray-bg);}
@@ -354,5 +354,17 @@ table th.bg {background-color: var(--color-type-black);line-height: inherit;colo
 .btn_input_check {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);animation: none !important;padding:20px;width: 100%;}
 
 @media screen and (max-width:720) {
+	.inner {padding:0 20px;margin:0 auto;}
+	.container {padding-top:50px;min-height: calc(100vh - 140px);clear: both;}
+
+	/*header*/
+	header {height: 80px;padding:20px 0;position: block;}
+	header::after {content:'';display: block;clear: both;}
+	header .logo {width: 50px;height: auto;vertical-align: middle;}
+	.header_wrap {display: flex;align-items: center;}
+	.menu_wrap {margin-left:20px;width: 100%;display: flex;justify-content: space-between;align-items: center;}
+	.menu_wrap .list {display: flex;align-items: center;}
+	.menu_wrap .list li {font-weight: bold;}
+	.menu_wrap .list li + li {margin-left: 20px;}
 	
 }
