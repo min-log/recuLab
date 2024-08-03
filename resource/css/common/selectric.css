@@ -185,6 +185,7 @@
 }
 
 .selectric-items li {
+  width: 100%;
   display: block;
   padding: 10px;
   color: #666;
