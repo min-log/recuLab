@@ -191,10 +191,10 @@ header .menu_wrap {flex-direction: row-reverse;}
 /* 지원자 레퍼런스 체크 */
 #drop-zone {max-width: 400px;width:100%;min-height: 100px;border: 2px dashed #ccc;border-radius: 10px;text-align: center;font-size: 16px;color: #999;margin: 40px auto 0;display: flex;align-items: center;justify-content: center;}
 #file-info {margin-top: 20px;text-align: center;font-size: 14px;}
-
+.menu_bar{display: none;}
 
 @media screen and (max-width:1200px) {
-
+	.menu_bar{display: block;}
 	/* 마이페이지 */
 	.maypage_wrap .mypage_left {
 		display: none;
