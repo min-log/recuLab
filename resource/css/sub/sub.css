@@ -51,9 +51,10 @@ header .menu_wrap {flex-direction: row-reverse;}
 
 /*서비스 소개 신청서 */
 .service_wrap {display: flex;}
-.service_wrap .service_img {width: 50%;border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding: 40px;margin-right: 20px;}
+.service_wrap .service_img {width: 50%;border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding: 40px;margin-right: 20px;background: var(--color-type-gray-bg);}
+.service_wrap .service_img .tit {font-size: 28px;}
 .service_wrap .service_from {width: 50%;}
-.service_agree_wrap {display: flex;align-items: center;border:1px solid var(--color-type-black);border-radius: var(--border-rd);padding:0 0 0 20px;position: relative;}
+.service_agree_wrap {display: flex;align-items: center;border:1px solid var(--color-type-gray-1);border-radius: var(--border-rd);padding:0 0 0 20px;position: relative;}
 .service_agree_wrap label {margin-bottom: 0 !important;}
 .service_agree_wrap .select-type-1 {width: 100%;position:initial;}
 .service_agree_box {padding: 10px;font-size: 12px;}
@@ -73,7 +74,7 @@ header .menu_wrap {flex-direction: row-reverse;}
 .maypage_wrap::after {content: '';display: block;clear: both;}
 .maypage_wrap .mypage_left {width: 300px;border-right: 1px solid var(--color-type-gray-2);position: sticky;top:80px;height:calc(100vh - 80px);float: left;padding:50px 20px 50px 0;display: flex;justify-content: space-between;flex-direction:column}
 .maypage_wrap .mypage_content {float: left;width: calc(100% - 300px);padding: 50px 0 100px 50px;}
-.maypage_wrap .mi_tit {position: relative;padding-left: 10px;margin-bottom: 10px;}
+.maypage_wrap .mi_tit {position: relative;padding-left: 10px;margin-bottom: 10px;font-size: 20px;}
 .maypage_wrap .mi_tit:after {content: '';border-left: 5px solid var(--color-main);display: block;position: absolute;top:50%;left: 0;width: 0px;height: 15px;transform: translate(0,-50%);z-index: 1;}
 .maypage_wrap .mypage_left .mypage_user_info h2 {display: inline-block;font-size: var(--font-size-big);}
 .maypage_wrap .mypage_left .mypage_user_info span {display: inline-block;margin-left: 10px;border:2px solid var(--color-type-black);padding:2px 10px;border-radius: var(--border-rd);font-size: 12px;vertical-align: middle;line-height: 20px;background-color: var(--color-main);}
@@ -85,8 +86,8 @@ header .menu_wrap {flex-direction: row-reverse;}
 .maypage_wrap .my_service {display: flex;}
 .maypage_wrap .my_service > div {width: 50%;}
 .maypage_wrap .my_service > div + div {margin-left:20px}
-.maypage_wrap .my_service h5 {margin-bottom: 10px;}
-.maypage_wrap .my_service p {font-size: 12px;}
+.maypage_wrap .my_service h5 {margin-bottom: 10px;font-size: 18px;}
+.maypage_wrap .my_service p {font-size: 14px;}
 .maypage_wrap .my_service label {display: block;padding: 20px;border:2px solid var(--color-type-gray-1);border-radius: var(--border-rd);background: var(--color-type-gray-bg);cursor: auto;}
 .maypage_wrap .my_service input[type="radio"] + label {opacity: 0.5;}
 .maypage_wrap .my_service input[type="radio"]:checked + label {opacity: 1;}
@@ -153,7 +154,7 @@ header .menu_wrap {flex-direction: row-reverse;}
 	position: relative;}
 
 .select-wrap .select-type-1 {width: 100%;}
-.select-wrap .select-type-1 .select-tit{border: 1px solid var(--color-type-black);
+.select-wrap .select-type-1 .select-tit{border: 1px solid var(--color-type-gray-1);
 	border-radius: var(--border-rd);
 	padding: 0 0 0 20px;}
 .culture_wrap {padding:20px;}
@@ -171,13 +172,13 @@ header .menu_wrap {flex-direction: row-reverse;}
 .survey_con textarea {width: 100% !important;height: 150px;resize: none;}
 .survey_con .t_left {float: left;margin-top: 10px;}
 .survey_con .t_right {float: right;margin-top: 10px;}
-.survey_btn {display: flex;justify-content: center;align-items: center;}
-.survey_btn [class*="btn-"] {width: 200px;background-color: var(--color-type-gray-bg);animation: none;}
+.survey_btn {display: flex;justify-content: center;align-items: center;align-items:stretch;}
+.survey_btn [class*="btn-"] {width: 200px;background-color: var(--color-type-gray-bg);animation: none;height: auto;display: flex;align-items: center;justify-content: center;}
 .survey_btn [class*="btn-"] +[class*="btn-"] {margin-left: 20px;}
 .survey_btn [class*="btn-"]:hover {background-color: var(--color-type-gray-2);}
-.survey_radio {display: flex;border: 1px solid var(--color-type-black);border-radius: var(--border-rd);overflow: hidden;}
+.survey_radio {display: flex;border: 1px solid var(--color-type-gray-1);border-radius: var(--border-rd);overflow: hidden;}
 .survey_radio label {display:block;width: 100%;cursor: pointer;}
-.survey_radio label + label {border-left: 1px solid var(--color-type-black);}
+.survey_radio label + label {border-left: 1px solid var(--color-type-gray-1);}
 .survey_radio label input[type="radio"] + span {text-align: center;padding:10px 10px;background: var(--color-type-gray-bg);display: block;font-weight: bold;}
 .survey_radio label input[type="radio"]:checked + span {background-color: var(--color-main) !important;}
 .survey_radio label:hover input[type="radio"] + span {background-color: var(--color-type-gray-2);}
@@ -193,6 +194,9 @@ header .menu_wrap {flex-direction: row-reverse;}
 #file-info {margin-top: 20px;text-align: center;font-size: 14px;}
 .menu_bar{display: none;}
 
+.qa_select_con {display: flex;}
+.qa_select_con .selectric-wrapper {width: 20%;}
+.qa_select_con input[type="text"] {margin-left:20px;width: calc(80% - 20px);}
 @media screen and (max-width:1200px) {
 	.menu_bar{display: block;}
 	/* 마이페이지 */
@@ -321,6 +325,9 @@ header .menu_wrap {flex-direction: row-reverse;}
 	.tab-box li a {padding:10px 20px;}
 	.tab-content {margin-top: 50px;}
 
+	.service_wrap .service_img .tit {font-size: 26px;}
+	.service_wrap .service_img img {z-index: -1;margin-top:-30px}
+	.maypage_wrap .mi_tit {font-size:18px;}
 
 }
 
