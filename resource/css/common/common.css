@@ -81,14 +81,14 @@ header .logo {width: 50px;height: auto;vertical-align: middle;display:block;}
 	background: var(--color-type-gray-bg);
 	border: 1px solid var(--color-type-black);
 	transform: translate(calc(600px - 40px), 0);
-	background: var(--color-type-gray-bg) url(http://127.0.0.1:5500/resource/images/icon/icon_menu_bar.png) center no-repeat;
+	background: var(--color-type-gray-bg) url(https://min-log.github.io/recuLab/resource/images/icon/icon_menu_bar.png) center no-repeat;
 	background-size: 20px;
 	z-index: 900;
 	transition: all 0.2s ease;
 }
 .menu_bar:hover {background-color: var(--color-main);}
 .menu_bar.active {
-	background: var(--color-main) url("http://127.0.0.1:5500/resource/images/icon/icon_close.png") center no-repeat !important;
+	background: var(--color-main) url("https://min-log.github.io/recuLab/resource/images/icon/icon_close.png") center no-repeat !important;
 	background-size: 30px !important;
 }
 .user_menu {
@@ -188,7 +188,7 @@ select::-ms-expand {display: none;}
 	width: 20px;
 	content: "";
 	display: block;
-	background: url(http://127.0.0.1:5500/resource/images/icon/btn_select.png) center no-repeat;
+	background: url(https://min-log.github.io/recuLab/resource/images/icon/btn_select.png) center no-repeat;
 	background-size: 10px;
 	position: absolute;
 	top:50%;right: 10px;
@@ -216,7 +216,7 @@ select::-ms-expand {display: none;}
 	padding: 0 40px 0 20px;
 }
 .selectric .label {padding:0;margin:0;font-size: var(--font-size-normal);color: var(--color-type-black);}
-.selectric .button {background: url("http://127.0.0.1:5500/resource/images/icon/btn_select.png") center no-repeat;background-size: 10px auto;height: 100%;}
+.selectric .button {background: url("https://min-log.github.io/recuLab/resource/images/icon/btn_select.png") center no-repeat;background-size: 10px auto;height: 100%;}
 .selectric .button:after {display: none;}
 .selectric-open .selectric .button {opacity: 0.5;}
 .selectric-items li {background-color: #fff;color:var(--color-type-black)}
@@ -404,7 +404,7 @@ table th.bg {background-color: var(--color-type-black);color: #fff;text-align: c
 .popup_top {display: flex;justify-content: space-between;padding:20px 40px;}
 .popup_top h5 {font-size: var(--font-size-big);}
 .popup_content {padding:40px;max-height: 70vh;overflow: hidden;overflow-y: auto;}
-.btn_close {width:30px;height:30px;background: url("http://127.0.0.1:5500/resource/images/icon/icon_close.png") center no-repeat;background-size: 30px;}
+.btn_close {width:30px;height:30px;background: url("https://min-log.github.io/recuLab/resource/images/icon/icon_close.png") center no-repeat;background-size: 30px;}
 .btn_input_check {border-radius: var(--border-rd);border:1px solid var(--color-type-gray-1);animation: none !important;padding:20px;width: 100%;}
 
 @media screen and (max-width:1200px) {
