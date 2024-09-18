@@ -62,8 +62,9 @@ header .menu_wrap {flex-direction: row-reverse;}
 /* 약관 */
 .agree_wrap h4 {font-size: var(--font-size-middle);}
 .agree_wrap h5 {margin-top:30px;margin-bottom: 10px;display: block;}
-.agree_ul {margin:10px 0;}
+.agree_ul {margin:10px 0;padding-left: 10px;}
 .agree_ul li {text-indent: -10px;padding-left: 10px;}
+.agree_ul li::before {content:'· ';display: inline-block;}
 
 
 /* 

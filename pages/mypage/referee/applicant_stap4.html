@@ -21,72 +21,79 @@
 				<section id="menuPopup"  class="mypage_left">
 					<div class="mypage_top">
 						<div class="mypage_user_info">
-							<a href="http://127.0.0.1:5500/pages/mypage/company/main.html" class="my_home">
+							<a href="http://127.0.0.1:5500/pages/mypage/referee/main.html" class="my_home">
 								<img src="http://127.0.0.1:5500/resource/images/icon/icon_my_b.png" alt="마이페이지 이동">
 							</a>
-							<h2 class="sub_tit">웨이플</h2>
-							<span>N차 남음</span>
+							<h2 class="sub_tit">평판작성자</h2>
+							<span>진행상황</span>
 						</div>
 						<div class="mypage_menu">
 							<ul>
 								<li>
-									<a href="http://127.0.0.1:5500/pages/mypage/company/applicant_add.html">
-										<img src="http://127.0.0.1:5500/resource/images/icon/icon_my_user_a.png" alt="">
-										입사지원자 추가
-									</a>
-								</li>
-								<li>
-									<a href="http://127.0.0.1:5500/pages/mypage/company/my_service.html">
+									<a href="http://127.0.0.1:5500/pages/mypage/referee/applicant_stap1.html">
 										<img src="http://127.0.0.1:5500/resource/images/icon/icon_my_service.png" alt="">
-										서비스 정보
+										약관 확인하기
 									</a>
 								</li>
 								<li class="active">
-									<a href="http://127.0.0.1:5500/pages/mypage/company/my_survey.html">
-										<img src="http://127.0.0.1:5500/resource/images/icon/icon_my_list.png" alt="">
-										기본 질문지 확인
-
+									<a href="http://127.0.0.1:5500/pages/mypage/referee/applicant_stap2.html">
+										<img src="http://127.0.0.1:5500/resource/images/icon/icon_my_list_ck.png" alt="">
+										레퍼런스 체크
 									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-
 					<ul class="mypage_pro">
 						<li>
-							<p>개인정보 작성</p>
+							<p>요청 레퍼런스</p>
 							<span class="num">3</span>
 						</li>
 						<li>
-							<p>레퍼런스 체크</p>
+							<p>작성 중 레퍼런스</p>
 							<span class="num">3</span>
 						</li>
 						<li>
-							<p>레퍼런스 체크 완료</p>
+							<p>완료 레퍼런스</p>
 							<span class="num">3</span>
 						</li>
 					</ul>
 
 				</section>
 				<section class="mypage_content">
-					<h4 class="sub_tit">질문지 확인하기</h4>
-					<p class="mt-10">평판 검증을 해주시는 인사담당자 분들께 드리는 질문입니다.</p>
-					<ul class="tab-box">
-						<li class="active">
-							<a href="http://127.0.0.1:5500/pages/mypage/company/my_survey.html">인사담당자</a>
-						</li>
-						<li>
-							<a href="http://127.0.0.1:5500/pages/mypage/company/my_survey_1.html">전직장 상사/동료</a>
-						</li>
+					<ul class="join_stap stap4">
+						<li class="active">약관동의</li>
+						<li class="active">정보확인</li>
+						<li class="active">문항체크</li>
+						<li class="active">완료</li>
 					</ul>
-					<div class="tab-content">
-						<div data-include="http://127.0.0.1:5500/pages/subvey/subvey.html"></div>
-					</div>		
+					<div class="applicant_stap1">
+						<div class="mt-100">
+							<h2 class="sub_tit">웨이플 정보 작성 완료</h2>
+							<p class="mt-10">
+								( 평판작성자 )님께서 지원자 ● ● ● 님의 정보를 모두 작성해 주셨습니다.
+								 감사합니다.
+							</p>
+						</div>
+					
+						<div class="t_c info_box mt-50">
+							<img class="logo" src="http://127.0.0.1:5500/resource/images/common/logo.png" alt="로고">
+							<p class="mt-20">
+								답변해 주시는 분들의 시간을 절대 헛되이 하지 않겠습니다. <br />
+								답변 받을 가치가 있는 문항만을 추구합니다.
+							</p>
+						</div>
+						<div class="mt-40">
+							<button class="btn-type-1 w-full agree_check_btn" onclick="location='http://127.0.0.1:5500/pages/main/index.html'">메인페이지로 돌아가기</button>
+						</div>
+					</div>
+
+
 				</section>
+
 			</div>
 		</div>
 	</div>
-	
 	<footer data-include="http://127.0.0.1:5500/pages/common/footer.html"></footer>
 	<script src="http://127.0.0.1:5500/resource/js/jquery.min.js"></script>
 	<script src="http://127.0.0.1:5500/resource/js/jquery.selectric.min.js"></script>
