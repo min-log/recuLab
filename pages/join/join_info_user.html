@@ -29,7 +29,7 @@
 				</div>
 				<form class="mt-50">
 					<div class="form_cell">
-						<label>회사명</label>
+						<label>회사명<span class="color_red">*</span> </label>
 						<div class="form_con">
 							<input type="text" placeholder="회사명을 입력해주세요"/>
 						</div>
@@ -39,7 +39,7 @@
 						</div>
 					</div>
 					<div class="form_cell">
-						<label>이름</label>
+						<label>이름<span class="color_red">*</span></label>
 						<div class="form_con flex">
 							<input type="text" placeholder="성">
 							<input type="text" placeholder="이름">
@@ -50,7 +50,7 @@
 						</div>
 					</div>
 					<div class="form_cell">
-						<label>전화번호</label>
+						<label>전화번호<span class="color_red">*</span></label>
 						<div class="form_con">
 							<input type="text" placeholder="-없이 작성해주세요.">
 						</div>
@@ -65,13 +65,13 @@
 						<span class="">요청 받은 이메일 ( test@naver.com )</span>로 가입을 진행해 주세요.
 					</div>
 					<div class="form_cell mt-40">
-						<label>이메일</label>
+						<label>이메일<span class="color_red">*</span></label>
 						<div class="form_con">
 							<input type="text" value="test@naver.com" disabled />
 						</div>
 					</div>
 					<div class="form_cell">
-						<label>비밀번호</label>
+						<label>비밀번호<span class="color_red">*</span></label>
 						<div class="form_con">
 							<input type="password" placeholder="영문, 숫자, 특수문자를 조합하여 8자리 이상 작성해주세요.">
 						</div>
@@ -81,13 +81,34 @@
 						</div>
 					</div>
 					<div class="form_cell">
-						<label>비밀번호 확인</label>
+						<label>비밀번호 확인<span class="color_red">*</span></label>
 						<div class="form_con">
 							<input type="password" placeholder="비밀번호를 다시 입력해주세요.">
 						</div>
 						<div class="err mt-10">
 							<img class="icon_err" src="https://min-log.github.io/recuLab/resource/images/icon/icon_err.png" />
 							비밀번호를 다시 확인해주세요.
+						</div>
+					</div>
+					<div class="form_cell">
+						<label>SNS 계정</label>
+						
+						<div class="form_con form_email">
+							<input type="text" placeholder="SNS 아이디를 입력해주세요." /> @
+							<select class="email_address" onChange="emailAddressChange()">
+								<option value="">개인 SNS 계정 주소를 선택해주세요.</option>
+								<option>instargram.com</option>
+								<option>facebook.com</option>
+								<option>linkedin.com</option>
+								<option value="i">직접입력</option>
+							</select>
+						</div>
+						<div class="form_con form_email_input" style="display: none;">
+							<input type="text" placeholder="개인 SNS계정 주소를 작성해주세요." />
+						</div>
+						<div class="err mt-10">
+							<img class="icon_err" src="https://min-log.github.io/recuLab/resource/images/icon/icon_err.png" />
+							개인 SNS계정 주소를 작성해주세요.
 						</div>
 					</div>
 				</form>

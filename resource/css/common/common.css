@@ -150,6 +150,11 @@ footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;
 .btn_wrap [class*="btn-"] + [class*="btn-"] {margin-left:10px}
 [class*="btn-"]:hover {animation: bounce .6s ease;}
 [class*="btn-"]:disabled {background: var(--color-type-gray-bg);color:var(--color-type-gray-1);animation: infinite;}
+[class*="btn-"].sm {
+	font-size:14px;padding: 0px 10px;
+	line-height: 28px;
+	height: 28px;
+	margin-left: 5px;}
 
 
 /* IE */
@@ -362,7 +367,7 @@ input[type='radio']:checked+label>i:before {
 		transform: translate3d(0, -.5em, 0) rotate(45deg);
 	}
 }
-
+.f_r {float: right;}
 .t_c {text-align: center;} .t_l {text-align: left;} .t_r {text-align: right;}
 .mt-10 {margin-top:10px !important}.ml-10 {margin-left:10px !important}.mr-10 {margin-right:10px !important}
 .mt-20 {margin-top:20px !important}.ml-20 {margin-left:20px !important}.mr-20 {margin-right:20px !important}
@@ -386,6 +391,7 @@ table th{background: var(--color-type-gray-bg);}
 table.t_c th,
 table.t_c td {text-align: center;}
 table th.bg {background-color: var(--color-type-black);color: #fff;text-align: center;}
+
 
 .bg_wrap {position: fixed;top:0;left:0;z-index: 900;width: 100vw;height: 100vh;background: #000;opacity: 0.2;display: none;}
 .loading_wrap {position: fixed;top:50%;left:50%;z-index: 1000;transform: translate(-50%,-50%);display: none;}

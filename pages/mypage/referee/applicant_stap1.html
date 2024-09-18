@@ -21,22 +21,22 @@
 				<section id="menuPopup"  class="mypage_left">
 					<div class="mypage_top">
 						<div class="mypage_user_info">
-							<a href="https://min-log.github.io/recuLab/pages/mypage/applicant/main.html" class="my_home">
+							<a href="https://min-log.github.io/recuLab/pages/mypage/referee/main.html" class="my_home">
 								<img src="https://min-log.github.io/recuLab/resource/images/icon/icon_my_b.png" alt="마이페이지 이동">
 							</a>
-							<h2 class="sub_tit">홍길동</h2>
+							<h2 class="sub_tit">평판작성자</h2>
 							<span>진행상황</span>
 						</div>
 						<div class="mypage_menu">
 							<ul>
-								<li>
-									<a href="https://min-log.github.io/recuLab/pages/mypage/applicant/applicant_stap1.html">
+								<li class="active">
+									<a href="https://min-log.github.io/recuLab/pages/mypage/referee/applicant_stap1.html">
 										<img src="https://min-log.github.io/recuLab/resource/images/icon/icon_my_service.png" alt="">
 										약관 확인하기
 									</a>
 								</li>
-								<li class="active">
-									<a href="https://min-log.github.io/recuLab/pages/mypage/applicant/applicant_stap2.html">
+								<li>
+									<a href="https://min-log.github.io/recuLab/pages/mypage/referee/applicant_stap2.html">
 										<img src="https://min-log.github.io/recuLab/resource/images/icon/icon_my_list_ck.png" alt="">
 										레퍼런스 체크
 									</a>
@@ -61,32 +61,68 @@
 
 				</section>
 				<section class="mypage_content">
-					<ul class="join_stap">
+					<ul class="join_stap stap4">
 						<li class="active">약관동의</li>
-						<li class="active">정보확인</li>
-						<li class="active">완료</li>
+						<li>정보확인</li>
+						<li>문항체크</li>
+						<li>완료</li>
 					</ul>
 					<div class="applicant_stap1">
 						<div class="mt-100">
-							<h2 class="sub_tit">웨이플 정보 작성 완료</h2>
+							<h2 class="sub_tit">웨이플 계정 생성</h2>
 							<p class="mt-10">
-								체크인서비스를 위한 지원자 ● ● ● 님의 정보가 모두 작성되었습니다. 
-								감사합니다.
+								웨이플 서비스 이용 약관에 동의해주세요.
 							</p>
 						</div>
-						
-						<div class="t_c info_box mt-50">
-							<img class="logo" src="https://min-log.github.io/recuLab/resource/images/common/logo.png" alt="로고">
-							<p class="mt-20">
-								회사와 답변해 주시는 분들의 시간을 절대 헛되이 하지 않겠습니다.<br />
-								답변 받을 가치가 있는 문항만을 추구합니다.
-							</p>
-							<P class="color_red mt-10">
-								마이페이지에서 레퍼런스 체크에 필요한 상세 정보를 추가적으로 진행해주세요.
-							</P>
+						<div class="join_agreement_wrap mt-50">
+							<div data-include="https://min-log.github.io/recuLab/pages/agree/serviceInfo.html"></div>
 						</div>
-						<div class="mt-40">
-							<button class="btn-type-1 w-full agree_check_btn" onclick="location='https://min-log.github.io/recuLab/pages/main/index.html'">메인페이지로 돌아가기</button>
+						<div class="mt-20">
+							<input type="checkbox" id="service_ck" />
+							<label for="service_ck" class="btn_input_check">
+								<i class="checkbox_custom"></i>
+								서비스 이용약관 동의 <span class="color_red ml-10">*(필수)</span>
+							</label>
+						</div>
+
+						<!--  -->
+
+						<div class="join_agreement_wrap mt-50">
+							<div data-include="https://min-log.github.io/recuLab/pages/agree/referenceInfo.html"></div>
+						</div>
+						<div class="mt-20">
+							<input type="checkbox" id="reference_ck" />
+							<label for="reference_ck" class="btn_input_check">
+								<i class="checkbox_custom"></i>
+								체크인서비스 실시 약관 <span class="color_red ml-10">*(필수)</span>
+							</label>
+						</div>
+						<!--  -->
+						<div class="join_agreement_wrap mt-50">
+							<div data-include="https://min-log.github.io/recuLab/pages/agree/personalInfo.html"></div>
+						</div>
+						<div class="mt-20">
+							<input type="checkbox" id="personal_ck" />
+							<label for="personal_ck" class="btn_input_check">
+								<i class="checkbox_custom"></i>
+								개인수집과 개인정보 제 3자 제공 동의 <span class="color_red ml-10">*(필수)</span>
+							</label>
+						</div>
+
+
+						<div class="mt-50">
+							<input type="checkbox" id="agreement_all" />
+							<label for="agreement_all" class="btn_input_check">
+								<i class="checkbox_custom"></i>
+								모두 동의
+							</label>
+						</div>
+						<div class="mt-10">
+							<a href="https://min-log.github.io/recuLab/pages/mypage/referee/applicant_stap2.html" class="btn-type-1 w-full">다음</a>
+						</div>
+						<div class="err t_c mt-20">
+							<img class="icon_err" src="https://min-log.github.io/recuLab/resource/images/icon/icon_err.png" />
+							약관에 동의를 해주세요.
 						</div>
 					</div>
 
