@@ -198,6 +198,58 @@ header .menu_wrap {flex-direction: row-reverse;}
 .qa_select_con {display: flex;}
 .qa_select_con .selectric-wrapper {width: 20%;}
 .qa_select_con input[type="text"] {margin-left:20px;width: calc(80% - 20px);}
+
+/* 보고서 */
+.report_wrap {word-break: keep-all;}
+.report_wrap .sec {margin-top: 100px;}
+.report_wrap h3::before {content:'';display:block;width: 50px;height: 50px;background:url("../../images/icon/tit_report.png") 0 0 repeat;background-size: cover;position: absolute;top: 0;left: 0;border-bottom: 1px solid #000;box-sizing: border-box;}
+.report_wrap h3::after {content:'Strictly Confidential';display: inline;position: absolute;top: 0;right: 0;font-size: 14px;color: var(--color-err);font-style:italic}
+.report_wrap h3 {
+	font-size: 24px;
+	font-weight: bold;
+	display: block;
+	padding: 0 0 0 60px;
+	line-height: 50px;
+	height: 50px;margin-bottom:50px;
+	border-bottom: 1px solid #000;position: relative;
+}
+.report_wrap h4 {font-size: 16px;margin-bottom: 10px;background: #000; color: #fff;font-weight: bold;display: inline-block;padding:0 10px;line-height: 40px;height: 40px;text-decoration: underline;text-align: center;}
+.report_wrap h4.line {font-size: 16px;margin-bottom: 10px;font-weight: bold;display: inline-block;padding:0 10px;line-height: 40px;height: 40px;text-decoration: underline;text-align: center;border-bottom: 2px solid #606060;color: #606060;background: #fff;text-decoration: none;}
+.report_wrap h5 {font-size: 14px;margin-bottom: 10px;background: #606060; color: #fff;font-weight: bold;display: inline-block;padding:0 10px;line-height: 40px;height: 40px;text-decoration: underline;text-align: center;}
+.report_wrap .list_type li {padding-left: 10px;position: relative;text-align: left;}
+.report_wrap .list_type li::after {content: '·';position: absolute;top:0;left:0;font-weight: bold;}
+
+.report_wrap table {border-bottom: 3px solid #000;border-top: 3px solid #000;}
+.report_wrap table tr td,
+.report_wrap table tr th {border-color: #000;line-height: 1.4;text-align:center;padding:15px 5px;word-break: keep-all;}
+.report_wrap table tr.border {border-top: 3px solid #000;}.report_wrap table thead {border-bottom: 3px solid #000;}
+.report_wrap table thead tr td,
+.report_wrap table thead tr th {background-color: rgb(255, 207, 62); font-weight: bold;}
+.report_wrap table tbody tr th {background-color: #eee;font-weight: bold;}
+.report_wrap .suggestion_wrap {display: flex;}
+.report_wrap .suggestion_wrap > div {width: calc(100% - 110px);}
+.report_wrap .suggestion_wrap > div + div {width: 100px;margin-left: 10px;display: flex;flex-direction: column;}
+.report_wrap .suggestion_wrap > div h4 {display: block;height: 60px;line-height: 60px;word-break: keep-all;}
+.report_wrap .suggestion_wrap > div + div h4 {line-height: 30px;}
+.report_wrap .suggestion_wrap > div + div p {background: #eee;height: 100%;display: flex;justify-content: center;align-items: center;text-align: center;}
+.report_wrap .con_50 {display: flex;padding: 0;}
+.report_wrap .con_50 dd {width: 50%;padding:0;margin: 0;}
+.report_wrap .con_50 dd + dd {margin-left: 40px;}
+.report_wrap .con_50 dd h4 {width: 100%;}
+.report_wrap .bar {text-align: left;width: 80%;display: flex;align-items: center;}
+.report_wrap .bar .line {background: rgb(255, 207, 62);border:2px solid #000;
+	width: calc(var(--var) * 20%);box-sizing: border-box;/* var 값을 사용하여 너비 계산 */display: inline-block;height: 20px;border-radius: 5px;}
+.report_wrap .bar .num {display: inline-block;margin-left: 10px;color:var(--color-err);font-weight: bold;}
+.report_wrap .bar.total .line {background: #999;}
+.report_wrap .bar.total .num {color:#000;}
+.report_wrap .box {border-color:rgb(255, 207, 62) ;border-radius: 20px;min-height: 150px;}
+.report_wrap .chart_table {border: none !important;margin-top: 10px;}
+.report_wrap .chart_table tr td,
+.report_wrap .chart_table tr th {border: none;text-align: left;padding:2px 0;}
+.report_wrap .chart_table tr td:first-child {border-right: 1px solid #999;text-align: right;padding-right: 10px;}
+.report_wrap .chart_table .bar .line {height: 8px;border:0;border-radius: 0;}
+.report_wrap .chart_table .bar .num {font-size: 12px;vertical-align: middle;}
+
 @media screen and (max-width:1200px) {
 	.menu_bar{display: block;}
 	/* 마이페이지 */
@@ -251,6 +303,19 @@ header .menu_wrap {flex-direction: row-reverse;}
 	.maypage_wrap .table_full_info .i_yn.x:after {content:'불합격';display: inline-block;vertical-align: middle;margin-left: 5px;}
 	.maypage_wrap .table_full_info .btn_down {position: absolute;top:20px;right: 20px;}
 	
+	/* 보고서 */
+	.report_wrap .suggestion_wrap {display: block;}
+	.report_wrap .suggestion_wrap>div+div h4,
+	.report_wrap .suggestion_wrap > div h4 {line-height: 40px;height: 40px;}
+	.report_wrap .suggestion_wrap>div+div h4 {margin-top: 10px;}
+	.report_wrap .suggestion_wrap>div p {line-height: 40px;height: 40px;}
+	.report_wrap .suggestion_wrap>div p br {display: none;}
+	.report_wrap .suggestion_wrap div {width: 100%;}
+	.report_wrap .suggestion_wrap>div+div {width: 100%;margin-left: 0;display: block;}
+	.report_wrap .con_50 {display: block;margin-top: 20px;}
+	.report_wrap .con_50 dd {width: 100%;margin:20px 0 !important;}
+	
+
 }
 
 @media screen and (max-width:720px) {
@@ -329,6 +394,29 @@ header .menu_wrap {flex-direction: row-reverse;}
 	.service_wrap .service_img .tit {font-size: 26px;}
 	.service_wrap .service_img img {z-index: -1;margin-top:-30px}
 	.maypage_wrap .mi_tit {font-size:18px;}
+
+
+
+	/* 보고서 */
+	.report_wrap .sec {margin-top: 100px;}
+	.report_wrap h3::before {width: 48px;height: 48px;}
+	.report_wrap h3::after {font-size: 14px;}
+	.report_wrap h3 {font-size: 22px;padding: 0 0 0 60px;line-height: 48px;height: 48px;margin-bottom:50px;}
+	.report_wrap h4 {font-size: 14px;margin-bottom: 8px;padding:0 8px;line-height: 38px;height: 38px;}
+	.report_wrap h4.line {font-size: 14px;margin-bottom: 8px;padding:0 8px;line-height: 38px;height: 38px;}
+	.report_wrap h5 {font-size: 12px;margin-bottom: 8px;padding:0 8px;line-height: 38px;height: 38px;}
+	.report_wrap table tr td,
+	.report_wrap table tr th {padding:12px 2px;}
+	.report_wrap .suggestion_wrap > div h4 {height: 58px;line-height: 58px;}
+	.report_wrap .suggestion_wrap > div + div h4 {line-height: 28px;}
+	.report_wrap .bar .line {height: 18px;border-radius: 5px;}
+	.report_wrap .bar .num {display: inline-block;margin-left: 8px;}
+	.report_wrap .box {border-radius: 18px;min-height: 148px;}
+
+	.mo_scroll {display: block;width: 100%;overflow-y: auto;}
+	.mo_scroll table {width: 500px;}
+
+
 
 }
 
