@@ -203,7 +203,7 @@ header .menu_wrap {flex-direction: row-reverse;}
 /* 보고서 */
 .report_wrap {word-break: keep-all;}
 .report_wrap .sec {margin-top: 100px;}
-.report_wrap h3::before {content:'';display:block;width: 50px;height: 50px;background:url("https: //min-log.github.io/recuLab/resource/images/icon/tit_report.png") 0 0 repeat;background-size: cover;position: absolute;top: 0;left: 0;border-bottom: 1px solid #000;box-sizing: border-box;}
+.report_wrap h3::before {content:'';display:block;width: 50px;height: 50px;background:url("https://min-log.github.io/recuLab/resource/images/icon/tit_report.png") 0 0 repeat;background-size: cover;position: absolute;top: 0;left: 0;border-bottom: 1px solid #000;box-sizing: border-box;}
 .report_wrap h3::after {content:'Strictly Confidential';display: inline;position: absolute;top: 0;right: 0;font-size: 14px;color: var(--color-err);font-style:italic}
 .report_wrap h3 {
 	font-size: 24px;
