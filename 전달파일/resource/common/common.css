@@ -62,7 +62,7 @@ button {padding:0;box-sizing: border-box;background: #fff;border:0;box-sizing: b
 /*header*/
 header {height: 80px;padding:20px 0;border-bottom: 1px solid var(--color-type-gray-2);position: fixed;z-index:100;width:100%;background-color: #fff;}
 header::after {content:'';display: block;clear: both;}
-header .logo {width: 50px;height: auto;vertical-align: middle;display:block;}
+header .logo {width: auto;height: 25px;vertical-align: middle;display:block;margin-top:8px}
 .header_wrap {display: block;height: 100%;}
 .menu_wrap {margin-left:20px;width:auto;display: inline-block;justify-content: space-between;align-items: center;float: right;}
 .menu_wrap .list {display: flex;align-items: center;}
@@ -129,6 +129,7 @@ footer {height:140px;background-color: var(--color-type-gray-bg);padding:40px 0;
 .footer_top .lang select {background-color: var(--color-type-gray-bg);}
 .footer_top .lang .selectric {width: 160px;height:35px;line-height: 35px;background-color: var(--color-type-gray-bg);}
 .footer_top .lang .selectric .label {height:35px;line-height: 35px;color:var(--color-type-black);}
+.footer_top img {width: 100px;height: auto;}
 
 .btn_wrap {display: flex;}
 .btn-type-1 {background-color: var(--color-main);}
@@ -379,7 +380,9 @@ input[type='radio']:checked+label>i:before {
 .mt-80 {margin-top:80px !important}.ml-80 {margin-left:80px !important}.mr-80 {margin-right:80px !important}
 .mt-90 {margin-top:90px !important}.ml-90 {margin-left:90px !important}.mr-90 {margin-right:90px !important}
 .mt-100 {margin-top:100px !important}.ml-100 {margin-left:100px !important}.mr-100 {margin-right:100px !important}
+.mb-20 {margin-bottom: 20px !important;} .mb-0 {margin-bottom: 0 !important;}
 .pt-100 {padding-top:100px !important}
+
 .w-full {width: 100%;}
 .color_main {color:var(--color-main)}
 .color_red {color:var(--color-err)}
@@ -448,7 +451,7 @@ table th.bg {background-color: var(--color-type-black);color: #fff;text-align: c
 
 	/*header*/
 	header {height: 60px;padding:10px 0;}
-	header .logo {width: 50px;}
+	header .logo {width: 100px;height: auto;margin:10px 0;}
 	header [class*="btn-"] {height: 30px;line-height: 30px;padding:0 10px;}
 	.header_wrap {justify-content: space-between;}
 	.menu_wrap {margin-top:5px}
@@ -457,6 +460,7 @@ table th.bg {background-color: var(--color-type-black);color: #fff;text-align: c
 	/*footer*/
 	footer {height:140px;padding:20px 0;}
 	.footer_top {display: flex;margin-bottom:10px;}
+	.footer_top img {width: 100px;height: auto;}
 	.footer_top .lang .selectric {width: 160px;height:30px;line-height: 30px;}
 	.footer_top .lang .selectric .label {height:30px;line-height: 30px;}
 
