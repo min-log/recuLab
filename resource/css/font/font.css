@@ -1,5 +1,101 @@
 /* SF -기본*/
 @font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 100;
+	src: url("Freesentation-1Thin.woff") format("woff"),
+		url("Freesentation-1Thin.ttf") format("truetype"),
+		url("Freesentation-1Thin.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 200;
+	src: url("Freesentation-2ExtraLight.woff") format("woff"),
+		url("Freesentation-2ExtraLight.ttf") format("truetype"),
+		url("Freesentation-2ExtraLight.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 300;
+	src: url("Freesentation-3Thin.woff") format("woff"),
+		url("Freesentation-3Thin.ttf") format("truetype"),
+		url("Freesentation-3Thin.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 400;
+	src: url("Freesentation-4Regular.woff") format("woff"),
+		url("Freesentation-4Regular.ttf") format("truetype"),
+		url("Freesentation-4Regular.otf") format("opentype");
+}
+
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 500;
+	src: url("Freesentation-5Medium.woff") format("woff"),
+		url("Freesentation-5Medium.ttf") format("truetype"),
+		url("Freesentation-5Medium.otf") format("opentype");
+}
+
+
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 600;
+	src: url("Freesentation-6SemiBold.woff") format("woff"),
+		url("Freesentation-6SemiBold.ttf") format("truetype")
+}
+
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 700;
+	src: url("Freesentation-7Bold.woff") format("woff"),
+		url("Freesentation-7Bold.ttf") format("truetype"),
+		url("Freesentation-7Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 800;
+	src: url("Freesentation-8ExtraBold.woff") format("woff"),
+		url("Freesentation-8ExtraBold.ttf") format("truetype"),
+		url("Freesentation-8ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: 900;
+	src: url("Freesentation-8ExtraBold.woff") format("woff"),
+		url("Freesentation-8ExtraBold.ttf") format("truetype"),
+		url("Freesentation-8ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "FreesentationVF";
+	font-style: normal;
+	font-weight: bold;
+	src: url("Freesentation-8ExtraBold.woff") format("woff"),
+		url("Freesentation-8ExtraBold.ttf") format("truetype"),
+		url("Freesentation-8ExtraBold.otf") format("opentype");
+}
+
+
+/* SF -기본*/
+@font-face {
 	font-family: "nanum";
 	font-style: normal;
 	font-weight: 100;
