@@ -4,6 +4,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Open Graph 메타 태그 -->
+	<meta property="og:title" content="weiple" />
+	<meta property="og:description" content="글로벌 커버리지 평판조회 체크인 서비스" />
+	<meta property="og:image" content="../../resource/images/common/logo.png" />
+	<meta property="og:url" content="https://www.weiple.co.kr" />
+	
+	<!-- Twitter 카드 메타 태그 (선택 사항) -->
+	<meta name="twitter:title" content="weiple" />
+	<meta name="twitter:description" content="글로벌 커버리지 평판조회 체크인 서비스" />
+	<meta name="twitter:image" content="../../resource/images/common/logo.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+
 	<title>Document</title>
 	<link href="http://127.0.0.1:5500/resource/css/font/font.css" rel="stylesheet" type="text/css" />
 	<!-- 기존 코드 ... -->
@@ -561,7 +574,24 @@
 				var swiper;
 
 				function initializeSwiper() {
-					if ($(window).width() <= 900) {
+					if ($(window).width() <= 700) {
+						// Initialize Swiper if it hasn't been initialized yet
+						if (!swiper) {
+							swiper = new Swiper('.swiper-container', {
+								slidesPerView: 1,  // 한 줄에 4개 슬라이드
+								slidesPerColumn: 1, // 2줄로 설정
+								spaceBetween: 10, // 슬라이드 간의 간격
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								},
+								pagination: {
+									el: '.swiper-pagination',
+									clickable: true,
+								},
+							});
+						}
+					} else if ($(window).width() <= 900) {
 						// Initialize Swiper if it hasn't been initialized yet
 						if (!swiper) {
 							swiper = new Swiper('.swiper-container', {

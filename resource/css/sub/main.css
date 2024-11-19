@@ -56,7 +56,7 @@
 .main_sec_4 .list {display: flex;}
 .main_sec_4 .list li {background: #fff;border:2px solid var(--color-type-black);border-radius: var(--border-rd);overflow: hidden;}
 .main_sec_4 .list li + li {margin-left: 20px;}
-.main_sec_4 .list img {display: block;width: 150%;height: auto;max-width: inherit;}
+.main_sec_4 .list img {display: block;width: 100%;height: auto;max-width: inherit;}
 .main_sec_4 .list .con {padding: 20px;border-top: 2px solid var(--color-type-black);}
 .main_sec_4 .list .con .tit {margin-bottom: 10px;}
 
