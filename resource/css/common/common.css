@@ -49,13 +49,13 @@
 a {text-decoration-line: none;display: inline-block;}
 h1,h2,h3,h4,h5,h6 {margin: 0;}
 img {max-width: 100%;}
-*,
+* {padding: 0;margin: 0;box-sizing: border-box;}
 html,
 body {color: var(--color-type-black);font-family: 'nanum', 'Arial', Arial, Dotum;font-size: var(--font-size-normal);line-height: 1.6;box-sizing: border-box;word-break: keep-all;scroll-behavior: smooth;padding:0;margin:0;}
 html,body {background: #fff;}
 .body_contaner {background: #fff;}
 button {padding:0;box-sizing: border-box;background: #fff;border:0;box-sizing: border-box;display: inline-block;}
-.inner {padding:0 40px;max-width:1200px;margin:0 auto;width: 100%;}
+.inner {padding:0;max-width:1400px;margin:0 auto;width: 100%;}
 .section_container{padding-top:80px;min-height: calc(100vh - 140px);clear: both;}
 .inner::after,
 .section_container::after {content: '';display: block;clear:both;overflow: hidden;}
@@ -64,12 +64,15 @@ header {height: 80px;padding:20px 0;border-bottom: 1px solid var(--color-type-gr
 header::after {content:'';display: block;clear: both;}
 header .logo {width: auto;height: 25px;vertical-align: middle;display:block;margin-top:8px}
 .header_wrap {display: block;height: 100%;}
-.menu_wrap {margin-left:20px;width:auto;display: inline-block;justify-content: space-between;align-items: center;float: right;}
-.menu_wrap .list {display: flex;align-items: center;}
-.menu_wrap .list li {font-weight: bold;}
-.menu_wrap .list li + li {margin-left: 20px;}
-
-
+.menu_wrap {display: flex;float: right;height: 39px;align-items: center;}
+.menu_wrap > a {color:#3b3636;font-size: 18px;padding: 0 20px;}
+.menu_wrap>a{}
+.menu_select {position: relative;margin-right: 20px;}
+.menu_select a {color:#3b3636;font-size: 18px;}
+.menu_select a img {width: 25px;height: 25px;vertical-align: middle;margin-right: 10px;}
+.menu_select ul {position: absolute;top: 100%;left: 50%;background:#fff;z-index: 1;padding: 10px;transform: translate(-50%,0);width: max-content;border-radius: 10px;}
+.menu_select ul li a {padding: 0 30px;height: 46px;line-height: 46px;display: block;border-radius: 50px;}
+.menu_select ul li a:hover {background: #f4f4f4;}
 .menu_bar {
 	position: fixed;
 	bottom: 50px;
